@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How we review — USD Contest Ledger</title>
+  <meta name="description" content="Inclusion rules, sources, and the checklist used to review each free-USD competition.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="mark">$</div>
+        <div>
+          <h1>USD Contest Ledger</h1>
+          <small>Review protocol</small>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">Catalog</a>
+        <a href="types.html">Types & rules</a>
+        <a href="review.html" aria-current="page">How we review</a>
+      </nav>
+    </header>
+
+    <article class="prose">
+      <p class="kicker">Desk rules</p>
+      <h2>How every listing is reviewed.</h2>
+      <p>
+        Compiled 12 August 2026 from official terms, App Store listings, and public threads
+        on r/beermoney, r/sweepstakes, r/Sweepstake, and r/EarnExtraIncome. The goal is a
+        ledger you can audit — not a ranking bought by affiliate copy.
+      </p>
+
+      <h3>What gets in</h3>
+      <ol>
+        <li>There is a <b>competition</b>: drawing, tournament, judged contest, trivia pot, or redeemable sweeps play. Pure survey / offer walls (Swagbucks, Freecash, JustPlay) are out of scope unless they run a separate contest.</li>
+        <li>There is a <b>free entry path</b>, or the listing is stamped “cash needs entry fee” so nobody confuses Gem rooms with dollars.</li>
+        <li>A winner can receive <b>real USD</b> (PayPal, bank, check, Stripe, or 1:1 redeemable sweeps currency). Gift-card-only token sinks are noted, not celebrated.</li>
+        <li>Signup exists on <b>iOS and/or a browser</b>. Android-only products are omitted unless they used to be on iOS and need a closed file (Lucky Day).</li>
+      </ol>
+
+      <h3>What we open before a stamp goes on</h3>
+      <ul>
+        <li>Official rules / Sweeps Rules / Terms of Use (eligibility, AMOE, prize forfeiture).</li>
+        <li>Cashier or FAQ for minimum redemption, playthrough, and payout rails.</li>
+        <li>App Store listing for iOS presence and what the developer actually claims.</li>
+        <li>Recent forum or news mentions for shutdowns, geo blocks, and cashout walls.</li>
+      </ul>
+
+      <h3>Status stamps</h3>
+      <ul>
+        <li><b>Active</b> — still running a free or AMOE path to USD as of the review date.</li>
+        <li><b>Mixed</b> — real USD exists, but most inventory is paid or membership-gated.</li>
+        <li><b>Caution</b> — still live, but economics or regulators have raised serious flags (Givling).</li>
+        <li><b>Inactive / closed</b> — gone from iOS, off-air, or not a responsible recommendation (Lucky Day, HQ Trivia).</li>
+      </ul>
+
+      <h3>Forum notes that shaped the desk</h3>
+      <ul>
+        <li>r/beermoney has asked for a single free-contest collector for years. Regular answers: Online-Sweepstakes.com, SweepstakesToday, Sweeties Sweeps.</li>
+        <li>r/sweepstakes and r/giveaways are the live firehose for brand cash (ViralSweep / Gleam). They also attract casino-affiliate spam — hence the red-flag line on those cards.</li>
+        <li>r/EarnExtraIncome 2026 threads push Blitz / Bingo Cash / Solitaire Cash. Those are skill-cash products. We list them as paid-cash so the catalog does not launder ads.</li>
+        <li>Papaya ToS (Feb 2026) and FAQ are unusually clear: Gems competitions are free; cash competitions take a platform fee from entry pools; Bonus Cash dies on withdrawal.</li>
+      </ul>
+
+      <h3>Re-review checklist</h3>
+      <p>Use this when you reopen a card, or when you add a new one to <code>assets/data.js</code>:</p>
+      <ol>
+        <li>Is the product still on the App Store or resolving at the official domain?</li>
+        <li>Does the current Official Rules page still say no purchase necessary?</li>
+        <li>What is today’s cash minimum, playthrough, and payout method?</li>
+        <li>Which states or countries are newly blocked?</li>
+        <li>Did KYC docs or tax forms change?</li>
+        <li>Are there fresh, specific cashout complaints (not generic “rigged” posts)?</li>
+        <li>Update <code>lastChecked</code> and the source list.</li>
+      </ol>
+
+      <h3>What this ledger is not</h3>
+      <ul>
+        <li>Not legal advice, tax advice, or a guarantee that a listed app will pay you.</li>
+        <li>Not a complete universe — brand sweeps turn over weekly; use the directory cards.</li>
+        <li>Not an endorsement of gambling. Sweeps casinos are chance products with a house edge.</li>
+      </ul>
+
+      <p><a class="btn primary" href="index.html">Open the catalog</a></p>
+    </article>
+  </div>
+</body>
+</html>

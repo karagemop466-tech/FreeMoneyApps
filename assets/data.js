@@ -3,6 +3,14 @@
    Terms change. Always open the official rules before you enter. */
 window.LEDGER = {
   reviewed: "2026-08-12",
+  pass: "B",
+  featured: ["pch", "aarp", "lucktastic", "kaggle", "online-sweepstakes", "pulsz"],
+  addedThisPass: [
+    "aarp", "hgtv", "iheart", "meredith", "mcluck", "wowvegas", "realprize",
+    "drivendata", "herox", "xprize", "topcoder", "sweeps-fanatics",
+    "contest-girl", "ultracontest", "sweepsadvantage", "freebieshark",
+    "sweepwidget", "solitaire-smash", "bingo-billions"
+  ],
   types: [
     {
       id: "sweepstakes",
@@ -1189,6 +1197,764 @@ window.LEDGER = {
       sources: [
         { title: "r/sweepstakes", url: "https://www.reddit.com/r/sweepstakes/" },
         { title: "r/Sweepstake", url: "https://www.reddit.com/r/Sweepstake/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "aarp",
+      name: "AARP Sweepstakes",
+      short: "Recurring no-purchase cash drawings. A free AARP.org account is enough; paid membership is not required.",
+      type: "sweepstakes",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.aarp.org/benefits-discounts/sweepstakes/",
+      iosUrl: "https://apps.apple.com/us/app/aarp/id333180431",
+      tosUrl: "https://www.aarp.org/about-aarp/company/terms-of-service/",
+      rulesUrl: "https://www.aarp.org/benefits-discounts/sweepstakes/",
+      prizeUsd: "Weekly and campaign checks commonly $1,500–$10,000; some pots higher",
+      prizeNote: "Campaigns rotate (cash weeks, Invest in Your Nest, VIP experiences). Official rules for the live campaign control the prize table. Membership does not improve odds.",
+      minCashout: "Winner claim only — typically a check",
+      payoutMethods: ["Check", "Sometimes electronic funds"],
+      eligibility: "Usually US + DC, 18+ unless a specific campaign is 50+. One entry per person per rules.",
+      restricted: "Void where prohibited. Employees and household members ineligible. Some campaigns are 50+ only.",
+      verification: {
+        level: "eligibility",
+        steps: [
+          "Create a free AARP.org account with legal name, email, ZIP, DOB.",
+          "Winners are emailed or called.",
+          "Sign an affidavit of eligibility, liability waiver, and publicity release.",
+          "Complete a W-9 or equivalent before the check is cut."
+        ]
+      },
+      signupSteps: [
+        "Open aarp.org sweepstakes (browser) or the AARP iOS app.",
+        "Register a free account — you do not need to buy membership.",
+        "Enter the live campaign. Read that campaign’s official rules PDF.",
+        "Some weekly series give you one entry that carries into later weekly drawings."
+      ],
+      howToWin: ["Random drawing among eligible entries for that period."],
+      howToGetMoney: [
+        "Respond to official AARP/administrator contact within the stated window.",
+        "Return affidavit + tax forms.",
+        "Receive a check. Taxes are yours."
+      ],
+      tosNotes: [
+        "NO PURCHASE OR PAYMENT NECESSARY. Membership will not increase chances of winning.",
+        "Each campaign has its own official rules and administrator (sometimes ePrize / Cvent)."
+      ],
+      redFlags: ["Ignore anyone who DMs claiming you won and asking for a processing fee."],
+      sources: [
+        { title: "AARP sweepstakes hub", url: "https://www.aarp.org/benefits-discounts/sweepstakes/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "hgtv",
+      name: "HGTV / Food Network Giveaways",
+      short: "Annual Dream Home and seasonal Urban Oasis drawings. Free daily entries on two sites; cash option is real USD.",
+      type: "sweepstakes",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.hgtv.com/sweepstakes",
+      iosUrl: "",
+      tosUrl: "https://www.hgtv.com/sweepstakes/hgtv-dream-home/sweepstakes/rules",
+      rulesUrl: "https://www.hgtv.com/sweepstakes/hgtv-dream-home/sweepstakes/rules",
+      prizeUsd: "Dream Home 2026: house + $100,000 EFT, or $750,000 cash option + $100,000",
+      prizeNote: "Dream Home 2026 entry closed 13 Feb 2026. Urban Oasis and other Discovery giveaways typically reopen later in the year. Always confirm the live hub.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Electronic funds transfer", "Title transfer if you take the house"],
+      eligibility: "US + DC (incl. territories on some years), 21+ at start date.",
+      restricted: "Background check. Winner has 5 days to respond. Taxes and carrying costs on the house are the winner’s.",
+      verification: {
+        level: "tax",
+        steps: [
+          "Complete the online form with legal name and street address (no P.O. box).",
+          "Winner notification + background check.",
+          "Return all requested forms or the prize is forfeited and an alternate is drawn.",
+          "1099 issued for the actual prize value."
+        ]
+      },
+      signupSteps: [
+        "Open hgtv.com/sweepstakes and foodnetwork.com sponsored sweeps.",
+        "Enter once per site per day while a giveaway is open.",
+        "Use the official reminder email if offered — do not pay a ‘entry service’."
+      ],
+      howToWin: ["One random grand-prize drawing among eligible entries."],
+      howToGetMoney: [
+        "If you take the cash option, Discovery pays by EFT after paperwork.",
+        "If you take the house you still get the cash prize portion, plus a tax bill on the full ARV."
+      ],
+      tosNotes: [
+        "NO PURCHASE NECESSARY. A purchase will not increase chance of winning.",
+        "Prize cannot be transferred except at sponsor’s discretion.",
+        "Odds depend on number of eligible entries."
+      ],
+      redFlags: ["Dream Home windows are seasonal. Fake ‘you won the HGTV house’ emails are a perennial scam."],
+      sources: [
+        { title: "HGTV Dream Home 2026 Official Rules", url: "https://www.hgtv.com/sweepstakes/hgtv-dream-home/sweepstakes/rules" },
+        { title: "HGTV sweepstakes hub", url: "https://www.hgtv.com/sweepstakes" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "iheart",
+      name: "iHeartRadio Contests",
+      short: "National and local radio sweeps with cash and flyaways. Enter in the iOS app or on station sites; keywords are free.",
+      type: "sweepstakes",
+      status: "live",
+      freePath: "full",
+      platforms: ["ios", "web"],
+      signupUrl: "https://www.iheart.com/promotions/",
+      iosUrl: "https://apps.apple.com/us/app/iheart-radio-music-podcasts/id290638154",
+      tosUrl: "https://www.iheart.com/legal/",
+      rulesUrl: "https://www.iheart.com/promotions/",
+      prizeUsd: "Rotating — e.g. 2026 USA Cash: 100 × $2,500; other pots are trips + prepaid cards",
+      prizeNote: "Each promotion has its own Aptivada/official-rules link. Listen or open the app for the daily keyword during the designated playtime, or use the online AMOE if the rules provide one.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Check or prepaid card", "Travel vouchers on flyaways"],
+      eligibility: "Usually US + DC (+ PR on some national pots), 18+ or 21+ by promo.",
+      restricted: "One entry per person/phone/email per playtime. Local station contests may be DMA-limited.",
+      verification: {
+        level: "eligibility",
+        steps: [
+          "Register in the iHeart app or on the station site.",
+          "Winners selected at random and contacted by the station/administrator.",
+          "Affidavit + tax forms on cash prizes."
+        ]
+      },
+      signupSteps: [
+        "Install iHeartRadio or open iheart.com/promotions.",
+        "Create a free account.",
+        "During a live contest, submit the designated keyword in the app or on the station page.",
+        "If you do not want to listen live, read that promo’s rules for the online/mail alternate."
+      ],
+      howToWin: ["Random among eligible keyword entries for that playtime or campaign."],
+      howToGetMoney: ["Station/administrator pays after winner paperwork. Cash contests pay a check or card, not app credit."],
+      tosNotes: [
+        "Each promo’s official rules control. National pots and local pots are different legal documents.",
+        "Text-to-enter, if offered, must also have a free online path to stay a legal sweep."
+      ],
+      redFlags: ["Premium-rate texts and ‘claim your prize’ Facebook clones. Stay on iheart.com or the official app."],
+      sources: [
+        { title: "iHeart promotions", url: "https://www.iheart.com/promotions/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "meredith",
+      name: "People / BHG / Meredith magazine sweeps",
+      short: "Dotdash Meredith titles run daily-entry cash drawings (BHG $25k and siblings). Free web form, no purchase.",
+      type: "sweepstakes",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.bhg.com/sweepstakes/",
+      iosUrl: "",
+      tosUrl: "https://www.dotdashmeredith.com/brands-terms",
+      rulesUrl: "https://www.bhg.com/sweepstakes/",
+      prizeUsd: "Recurring magazine pots — BHG has advertised $25,000 cash; other titles vary",
+      prizeNote: "People, Better Homes & Gardens, Allrecipes, Travel + Leisure and sisters rotate daily-entry sweeps. Open the current official rules on that title’s site.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Check or EFT per that official rules PDF"],
+      eligibility: "Typically US 18+ or 21+. One entry per email per day.",
+      restricted: "Magazine subscription is optional and must not improve odds.",
+      verification: {
+        level: "eligibility",
+        steps: [
+          "Submit the official form with legal name and address.",
+          "Winner affidavit + W-9 on cash prizes of $600+."
+        ]
+      },
+      signupSteps: [
+        "Open the title’s sweepstakes page (start at bhg.com/sweepstakes or people.com promotions).",
+        "Enter daily. Decline any paid club upsell.",
+        "Save the official rules URL for that entry period."
+      ],
+      howToWin: ["Random drawing after the entry deadline."],
+      howToGetMoney: ["Administrator pays after affidavit. Taxes on you."],
+      tosNotes: ["NO PURCHASE NECESSARY is required on every legitimate Meredith sweep.", "Multiple brands share a corporate legal stack but each sweep is its own promotion."],
+      redFlags: ["Lookalike ‘People magazine winner’ texts. Only trust the brand domain."],
+      sources: [
+        { title: "BHG sweepstakes", url: "https://www.bhg.com/sweepstakes/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "mcluck",
+      name: "McLuck",
+      short: "Sweeps casino with native iOS app. Free SC via login/AMOE; cash redemption from about 75 SC after KYC.",
+      type: "sweeps-casino",
+      status: "live",
+      freePath: "amoes",
+      platforms: ["ios", "web"],
+      signupUrl: "https://www.mcluck.com/",
+      iosUrl: "https://apps.apple.com/us/app/mcluck-social-casino/id1618338918",
+      tosUrl: "https://www.mcluck.com/",
+      rulesUrl: "https://www.mcluck.com/",
+      prizeUsd: "1 SC ≈ $1",
+      prizeNote: "Gift cards from ~10 SC; cash via ACH from ~75 SC. First-time KYC is ID + same-day selfie + proof of address ≤90 days.",
+      minCashout: "About 10 SC gift cards / 75 SC cash",
+      payoutMethods: ["ACH bank transfer", "Digital gift cards"],
+      eligibility: "US, age gate, eligible states only.",
+      restricted: "Long block list in 2026 reviews includes AL, CA, CT, DE, GA, ID, KY, LA, MD, MI, MT, NV, NJ, NY, OH, TN, WA, WV — confirm on the live gate.",
+      verification: {
+        level: "kyc",
+        steps: [
+          "Register one account in your legal name.",
+          "Upload photo ID, selfie, and recent proof of address before the first redeem.",
+          "1x playthrough on promotional SC.",
+          "Redeem from the cashier."
+        ]
+      },
+      signupSteps: [
+        "Create an account at mcluck.com or in the McLuck iOS app.",
+        "Claim no-purchase welcome / daily SC.",
+        "Use the Sweeps Rules mail-in AMOE for extra free SC."
+      ],
+      howToWin: ["Play in Sweeps Coin mode. Gold Coins never redeem."],
+      howToGetMoney: [
+        "Gift cards are the realistic free-player exit.",
+        "Cash ACH can take several business days; first redemption waits on KYC."
+      ],
+      tosNotes: ["No purchase necessary. SC cannot be bought.", "Dormant coins may expire."],
+      redFlags: ["State list is aggressive. Do not bother if you live in a blocked state."],
+      sources: [
+        { title: "McLuck", url: "https://www.mcluck.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "wowvegas",
+      name: "WOW Vegas",
+      short: "Browser/PWA sweeps casino. Daily login + mail-in AMOE. Cash from ~100 SC; gift cards lower.",
+      type: "sweeps-casino",
+      status: "live",
+      freePath: "amoes",
+      platforms: ["web"],
+      signupUrl: "https://www.wowvegas.com/",
+      iosUrl: "",
+      tosUrl: "https://www.wowvegas.com/",
+      rulesUrl: "https://www.wowvegas.com/",
+      prizeUsd: "1 SC = $1",
+      prizeNote: "No native iOS app in mid-2026 reviews — install the PWA from Safari if you want it on the home screen.",
+      minCashout: "About 25–50 SC gift cards / 50–100 SC cash (confirm cashier)",
+      payoutMethods: ["ACH / Trustly", "Skrill", "Prizeout gift cards"],
+      eligibility: "US eligible states, 18+/21+.",
+      restricted: "Commonly blocked: WA, ID, NV, MI and territories. 1099-MISC at $600+.",
+      verification: {
+        level: "kyc",
+        steps: [
+          "KYC once: government ID + proof of address (24–72 hours).",
+          "1x playthrough.",
+          "Redeem at or above the method minimum."
+        ]
+      },
+      signupSteps: [
+        "Register at wowvegas.com.",
+        "Claim daily free SC.",
+        "Follow Sweeps Rules for the handwritten AMOE."
+      ],
+      howToWin: ["SC gameplay only."],
+      howToGetMoney: ["Cashier after KYC. Gift cards are faster than ACH."],
+      tosNotes: ["Standard dual-currency sweeps model. No purchase necessary."],
+      redFlags: ["No App Store listing — do not download a similarly named iOS clone."],
+      sources: [
+        { title: "WOW Vegas", url: "https://www.wowvegas.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "realprize",
+      name: "RealPrize",
+      short: "Sweeps casino with a relatively fat no-deposit SC package in 2026 promos. Browser signup; KYC before cash.",
+      type: "sweeps-casino",
+      status: "live",
+      freePath: "amoes",
+      platforms: ["web"],
+      signupUrl: "https://www.realprize.com/",
+      iosUrl: "",
+      tosUrl: "https://www.realprize.com/",
+      rulesUrl: "https://www.realprize.com/",
+      prizeUsd: "1 SC ≈ $1",
+      prizeNote: "Welcome packages advertised with large GC + bonus SC. Only SC won after playthrough redeem.",
+      minCashout: "Confirm in cashier (commonly 50–100 SC)",
+      payoutMethods: ["Bank transfer", "Skrill", "Gift cards"],
+      eligibility: "US eligible states, age gate, one account.",
+      restricted: "State gate on first visit. VPN banned.",
+      verification: {
+        level: "kyc",
+        steps: ["Government ID before first redemption.", "Playthrough on bonus SC."]
+      },
+      signupSteps: [
+        "Create a free RealPrize account.",
+        "Claim the no-purchase coins.",
+        "Use AMOE in the Sweeps Rules for extra SC without buying GC."
+      ],
+      howToWin: ["Play SC mode."],
+      howToGetMoney: ["Redeem eligible SC after KYC."],
+      tosNotes: ["Purchase of Gold Coins is optional and does not buy SC directly."],
+      redFlags: ["Promo pages inflate welcome SC. Read the live cashier, not the banner."],
+      sources: [
+        { title: "RealPrize", url: "https://www.realprize.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "drivendata",
+      name: "DrivenData",
+      short: "Social-impact data-science contests with published USD purses. Free to enter; winners paid by check or wire after tax forms.",
+      type: "tech",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.drivendata.org/competitions/",
+      iosUrl: "",
+      tosUrl: "https://www.drivendata.org/competitions/",
+      rulesUrl: "https://www.drivendata.org/competitions/",
+      prizeUsd: "Per contest — often $10,000–$200,000 total purses",
+      prizeNote: "Not every competition pays cash. Filter for prize competitions. Winning code is usually open-sourced under MIT.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Check", "Wire / electronic transfer"],
+      eligibility: "Set per contest. Teams allowed. Some US-person limits on federal challenges.",
+      restricted: "Employees of the sponsor are typically banned. Export-control and data-use rules apply.",
+      verification: {
+        level: "tax",
+        steps: [
+          "DrivenData account.",
+          "On win: eligibility packet + W-9 (US) within the stated days.",
+          "Team prize split is even unless the team files a written allocation."
+        ]
+      },
+      signupSteps: [
+        "Create a free account at drivendata.org.",
+        "Open Competitions and read that contest’s full rules (they say NO PURCHASE NECESSARY).",
+        "Accept the data license and submit before the UTC deadline."
+      ],
+      howToWin: ["Private leaderboard / judged criteria in the problem statement."],
+      howToGetMoney: [
+        "DrivenData notifies winners by email.",
+        "After verification, check or wire in about 30 days.",
+        "US winners get a 1099. You pay the tax."
+      ],
+      tosNotes: [
+        "Winning model documentation template is mandatory for prize eligibility.",
+        "Failure to return verification docs can forfeit the purse."
+      ],
+      redFlags: ["Warm-up / practice tracks often pay $0. Read the prize table."],
+      sources: [
+        { title: "DrivenData competitions", url: "https://www.drivendata.org/competitions/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "herox",
+      name: "HeroX / Challenge.gov",
+      short: "Marketplace of judged innovation prizes, including US federal Challenge.gov pots paid by EFT.",
+      type: "tech",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.herox.com/challenges",
+      iosUrl: "",
+      tosUrl: "https://www.herox.com/terms",
+      rulesUrl: "https://www.challenge.gov/",
+      prizeUsd: "Per challenge — federal pots often $25,000–$500,000+",
+      prizeNote: "HeroX hosts many sponsor challenges. Challenge.gov is the official US government index; some of those are also on HeroX.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Electronic funds transfer to the team captain or entity"],
+      eligibility: "Federal cash prizes usually require a US citizen/permanent-resident captain or a US-incorporated entity.",
+      restricted: "Federal employees and sponsor staff typically ineligible. International solvers may compete but cannot take the cash.",
+      verification: {
+        level: "tax",
+        steps: [
+          "Register on HeroX and/or Challenge.gov.",
+          "Identify a team captain who can legally receive the purse.",
+          "Winners return verification and payment documents within ~10 business days.",
+          "IRS withholding may apply."
+        ]
+      },
+      signupSteps: [
+        "Browse herox.com/challenges or challenge.gov.",
+        "Open Official Rules before you build.",
+        "Submit through the listed platform by the deadline."
+      ],
+      howToWin: ["Expert or agency judging on published criteria. Not a random sweep."],
+      howToGetMoney: ["Sponsor/agency pays the captain or the entity in full. The captain must split the team."],
+      tosNotes: ["Each challenge is its own legal promotion.", "IP and open-source conditions vary wildly — read them."],
+      redFlags: ["Some HeroX listings are awareness campaigns with no cash. Confirm the prize table."],
+      sources: [
+        { title: "HeroX challenges", url: "https://www.herox.com/challenges" },
+        { title: "Challenge.gov", url: "https://www.challenge.gov/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "xprize",
+      name: "XPRIZE",
+      short: "Large multi-year incentive prizes and occasional hackathons with seven-figure USD pools.",
+      type: "tech",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.xprize.org/",
+      iosUrl: "",
+      tosUrl: "https://www.xprize.org/",
+      rulesUrl: "https://www.xprize.org/",
+      prizeUsd: "Flagship prizes in the millions; 2026 Google-backed hackathon advertised a $2M pool",
+      prizeNote: "These are multi-month or multi-year team efforts, not daily apps. Competitor agreements are long and specific.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["As stated in that prize’s competitor agreement"],
+      eligibility: "Per prize. Teams, labs, and companies. Sanctions and export rules apply.",
+      restricted: "Some tracks require open results, field tests, or US presence.",
+      verification: {
+        level: "tax",
+        steps: [
+          "Register a team on xprize.org.",
+          "Execute the competitor agreement.",
+          "Milestone and grand-prize payments follow verification and judging."
+        ]
+      },
+      signupSteps: [
+        "Open the live prize on xprize.org.",
+        "Read the guidelines and competitor agreement before paying any optional team fee — many tracks are free to register.",
+        "Submit on the published milestone calendar."
+      ],
+      howToWin: ["Judged against published technical thresholds."],
+      howToGetMoney: ["XPRIZE / sponsor pays per the agreement after judges certify the result."],
+      tosNotes: ["Guidelines override marketing pages.", "IP assignment or license terms are the whole game — read them twice."],
+      redFlags: ["Not a casual contest. Budget time in months, not evenings."],
+      sources: [
+        { title: "XPRIZE", url: "https://www.xprize.org/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "topcoder",
+      name: "Topcoder",
+      short: "Long-running design, development, and data-science tournaments. Many challenges pay USD to verified members.",
+      type: "tech",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.topcoder.com/challenges",
+      iosUrl: "",
+      tosUrl: "https://www.topcoder.com/policy",
+      rulesUrl: "https://www.topcoder.com/challenges",
+      prizeUsd: "Per challenge — hundreds to tens of thousands; TCO finals add extra purses",
+      prizeNote: "Create a free member account. Cash is paid through Topcoder’s payment stack after tax profile setup. Not every listed item is a cash challenge.",
+      minCashout: "Per Topcoder payment policy (complete tax profile first)",
+      payoutMethods: ["Topcoder payment / Payoneer-style rails as currently offered"],
+      eligibility: "18+ typical. Some challenges are region- or skill-gated. Employees of the client are ineligible.",
+      restricted: "Payment may be blocked in sanctioned countries. You must pass member verification to get paid.",
+      verification: {
+        level: "tax",
+        steps: [
+          "Topcoder member account.",
+          "Complete identity and tax profile before a payout will release.",
+          "TCO cash is paid within the stated window after finals."
+        ]
+      },
+      signupSteps: [
+        "Register at topcoder.com.",
+        "Open Challenges and filter for prize > $0.",
+        "Submit before the challenge deadline. Read that challenge’s spec — it is the contract."
+      ],
+      howToWin: ["Score / review board / provisional + final tests, depending on track."],
+      howToGetMoney: ["Winnings hit your Topcoder account, then you withdraw after tax setup."],
+      tosNotes: ["Work product licensing is defined per challenge.", "Late or non-passing submissions earn $0."],
+      redFlags: ["Some ‘challenges’ are copilot or QA tasks, not contests. Check the type badge."],
+      sources: [
+        { title: "Topcoder challenges", url: "https://www.topcoder.com/challenges" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "sweeps-fanatics",
+      name: "Sweepstakes Fanatics",
+      short: "High-traffic US directory of no-purchase sweeps. Not a payer — click through to the sponsor.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.sweepstakesfanatics.com/",
+      iosUrl: "",
+      tosUrl: "https://www.sweepstakesfanatics.com/",
+      rulesUrl: "https://www.sweepstakesfanatics.com/",
+      prizeUsd: "Varies by listed sponsor; cash listings are common",
+      prizeNote: "r/beermoney-era staple alongside Online-Sweepstakes. Prefer listings that link official rules.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Paid by each sponsor"],
+      eligibility: "Per listing, usually US.",
+      restricted: "Affiliate wrappers exist. Confirm the sponsor domain.",
+      verification: {
+        level: "eligibility",
+        steps: ["Enter on the sponsor form. The directory does not pay you."]
+      },
+      signupSteps: [
+        "Open sweepstakesfanatics.com.",
+        "Filter or scan for cash / daily entry.",
+        "Enter on the official sponsor page and save that rules URL."
+      ],
+      howToWin: ["Whatever the sponsor’s official rules say."],
+      howToGetMoney: ["Sponsor affidavit / check."],
+      tosNotes: ["Directories are not the sponsor of listed giveaways."],
+      redFlags: ["Skip any outbound link that asks you to pay to enter."],
+      sources: [
+        { title: "Sweepstakes Fanatics", url: "https://www.sweepstakesfanatics.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "contest-girl",
+      name: "Contest Girl",
+      short: "Long-running US/Canada contest listing blog. Good for daily cash and instant-win hunting.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.contestgirl.com/",
+      iosUrl: "",
+      tosUrl: "https://www.contestgirl.com/",
+      rulesUrl: "https://www.contestgirl.com/",
+      prizeUsd: "Varies — many cash and prepaid-card listings",
+      prizeNote: "Blog format. Check end dates; expired posts linger.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Sponsor"],
+      eligibility: "Posted per contest (US, US+CA, or WW).",
+      restricted: "Canadian eligibility is marked when it exists — do not assume.",
+      verification: {
+        level: "eligibility",
+        steps: ["Enter on the sponsor site."]
+      },
+      signupSteps: [
+        "Open contestgirl.com.",
+        "Use category or search for ‘cash’.",
+        "Click through and read official rules."
+      ],
+      howToWin: ["Sponsor drawing or instant win."],
+      howToGetMoney: ["Sponsor pays winners."],
+      tosNotes: ["Independent blog, not a prize administrator."],
+      redFlags: ["Old posts. Always verify the end date on the sponsor page."],
+      sources: [
+        { title: "Contest Girl", url: "https://www.contestgirl.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "ultracontest",
+      name: "UltraContest",
+      short: "Directory biased toward cash and instant-win brand games. Useful daily-entry list.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.ultracontest.com/",
+      iosUrl: "",
+      tosUrl: "https://www.ultracontest.com/",
+      rulesUrl: "https://www.ultracontest.com/",
+      prizeUsd: "Varies — site markets cash-first listings",
+      prizeNote: "2026 roundups cite dozens of live instant wins from national CPG brands.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Sponsor"],
+      eligibility: "Per brand rules. Many are 21+ alcohol promotions.",
+      restricted: "Tobacco/alcohol instant wins require age + sometimes smoker status.",
+      verification: {
+        level: "eligibility",
+        steps: ["Enter on the brand’s official game. Keep a screenshot of the official rules."]
+      },
+      signupSteps: [
+        "Open ultracontest.com.",
+        "Sort by cash or instant win.",
+        "Enter only on the brand domain."
+      ],
+      howToWin: ["Brand RNG or random draw."],
+      howToGetMoney: ["Brand / prize house (often a prepaid card or Venmo credit)."],
+      tosNotes: ["Alcohol and tobacco games are 21+ and state-restricted."],
+      redFlags: ["Pack-code games must still offer AMOE. If they do not, skip."],
+      sources: [
+        { title: "UltraContest", url: "https://www.ultracontest.com/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "sweepsadvantage",
+      name: "Sweepstakes Advantage",
+      short: "Daily-updated directory with a dedicated cash-sweeps view. Forum culture similar to Online-Sweepstakes.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.sweepsadvantage.com/cash-sweepstakes",
+      iosUrl: "",
+      tosUrl: "https://www.sweepsadvantage.com/",
+      rulesUrl: "https://www.sweepsadvantage.com/cash-sweepstakes",
+      prizeUsd: "Hundreds of live cash listings at a time (site claim, mid-2026)",
+      prizeNote: "Use the cash filter. Community winner reports exist but are not audited by this ledger.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Sponsor"],
+      eligibility: "Per listing.",
+      restricted: "US-centric. Read each official rules page.",
+      verification: {
+        level: "eligibility",
+        steps: ["Sponsor verifies winners, not this directory."]
+      },
+      signupSteps: [
+        "Open sweepsadvantage.com/cash-sweepstakes.",
+        "Enter daily listings first if you want volume.",
+        "Keep a spreadsheet of what you entered — the site will not do it for you."
+      ],
+      howToWin: ["Sponsor rules."],
+      howToGetMoney: ["Sponsor payout after affidavit."],
+      tosNotes: ["Directory only."],
+      redFlags: ["Affiliate casino modules on some sweep sites. Stay on the cash-listing view."],
+      sources: [
+        { title: "SweepsAdvantage cash", url: "https://www.sweepsadvantage.com/cash-sweepstakes" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "freebieshark",
+      name: "FreebieShark",
+      short: "Daily instant-win and sweep tracker. Strong for brand cash, Venmo credits, and prepaid cards.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.freebieshark.com/sweepstakes",
+      iosUrl: "",
+      tosUrl: "https://www.freebieshark.com/",
+      rulesUrl: "https://www.freebieshark.com/sweepstakes",
+      prizeUsd: "Varies — Casamigos-style Venmo instants and $5k–$15k brand cash appear regularly",
+      prizeNote: "Updated daily. Alcohol/tobacco games are age-gated.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Sponsor (Venmo, prepaid, check)"],
+      eligibility: "Per brand. Many 21+.",
+      restricted: "State exclusions on alcohol promotions (often MA, MI, etc.).",
+      verification: {
+        level: "eligibility",
+        steps: ["Brand winner verification."]
+      },
+      signupSteps: [
+        "Open freebieshark.com/sweepstakes.",
+        "Use Instant Win vs Sweepstakes sections.",
+        "Enter on the official brand URL."
+      ],
+      howToWin: ["Instant reveal or end-of-period draw."],
+      howToGetMoney: ["Brand prize fulfillment."],
+      tosNotes: ["FreebieShark is a tracker, not a sponsor."],
+      redFlags: ["21+ games that still ask for a purchase without AMOE are illegal lotteries — skip."],
+      sources: [
+        { title: "FreebieShark sweepstakes", url: "https://www.freebieshark.com/sweepstakes" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "sweepwidget",
+      name: "SweepWidget Giveaways",
+      short: "Hosted giveaway directory. Every listed item is supposed to be no-purchase; prizes include cash and cards.",
+      type: "directory",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://sweepwidget.com/giveaways/",
+      iosUrl: "",
+      tosUrl: "https://sweepwidget.com/terms",
+      rulesUrl: "https://sweepwidget.com/giveaways/",
+      prizeUsd: "Varies by host — some cash, many products",
+      prizeNote: "SweepWidget is also the software brands use. The public directory is only as clean as the hosts. Prefer verified-brand rows.",
+      minCashout: "n/a — directory",
+      payoutMethods: ["Each host"],
+      eligibility: "Per giveaway widget.",
+      restricted: "Worldwide mix. Filter country.",
+      verification: {
+        level: "eligibility",
+        steps: ["Host selects a winner in the widget and pays per that giveaway’s rules."]
+      },
+      signupSteps: [
+        "Open sweepwidget.com/giveaways.",
+        "Open a listing and complete only the free actions.",
+        "Skip extra paid ‘boost’ actions."
+      ],
+      howToWin: ["Usually random among completed entries."],
+      howToGetMoney: ["The hosting brand emails the winner."],
+      tosNotes: ["SweepWidget is the platform, not the sponsor of every pot."],
+      redFlags: ["Creator giveaways can vanish. Screenshot the rules and prize."],
+      sources: [
+        { title: "SweepWidget giveaways", url: "https://sweepwidget.com/giveaways/" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "solitaire-smash",
+      name: "Solitaire Smash",
+      short: "iOS head-to-head solitaire. Prize pools can exceed $100 — but cash seats take an entry fee.",
+      type: "skill",
+      status: "mixed",
+      freePath: "paid-cash",
+      platforms: ["ios"],
+      signupUrl: "https://apps.apple.com/us/app/solitaire-smash-win-real-cash/id6444781403",
+      iosUrl: "https://apps.apple.com/us/app/solitaire-smash-win-real-cash/id6444781403",
+      tosUrl: "https://apps.apple.com/us/app/solitaire-smash-win-real-cash/id6444781403",
+      rulesUrl: "https://apps.apple.com/us/app/solitaire-smash-win-real-cash/id6444781403",
+      prizeUsd: "Head-to-head and event pools; reviews cite $100+ tables",
+      prizeNote: "2026 roundups list PayPal, Apple Pay, and bank transfer. Free practice is not a USD competition.",
+      minCashout: "Confirm in-app (PayPal / Apple Pay / bank)",
+      payoutMethods: ["PayPal", "Apple Pay", "Bank transfer"],
+      eligibility: "18+, enabled jurisdictions.",
+      restricted: "Skill-cash geo blocks similar to other tournament apps.",
+      verification: {
+        level: "kyc",
+        steps: ["Payment method + ID on cashout."]
+      },
+      signupSteps: [
+        "Install Solitaire Smash from the App Store.",
+        "Play free/practice first.",
+        "Only buy a cash seat if you accept losing the fee."
+      ],
+      howToWin: ["Higher score in the timed match."],
+      howToGetMoney: ["Withdrawable cash only from cash-entry wins."],
+      tosNotes: ["Read in-app Terms before depositing. This ledger stamps it paid-cash on purpose."],
+      redFlags: ["Ads imply free money. The free path does not pay USD."],
+      sources: [
+        { title: "App Store listing", url: "https://apps.apple.com/us/app/solitaire-smash-win-real-cash/id6444781403" }
+      ],
+      lastChecked: "2026-08-12"
+    },
+    {
+      id: "bingo-billions",
+      name: "Bingo Billions",
+      short: "iOS bingo tournaments for cash. Same skill-cash pattern: free rooms for practice, USD behind an entry fee.",
+      type: "skill",
+      status: "mixed",
+      freePath: "paid-cash",
+      platforms: ["ios"],
+      signupUrl: "https://apps.apple.com/us/app/bingo-billions-win-real-money/id6446250848",
+      iosUrl: "https://apps.apple.com/us/app/bingo-billions-win-real-money/id6446250848",
+      tosUrl: "https://apps.apple.com/us/app/bingo-billions-win-real-money/id6446250848",
+      rulesUrl: "https://apps.apple.com/us/app/bingo-billions-win-real-money/id6446250848",
+      prizeUsd: "Cash tournament prize tables",
+      prizeNote: "Penny Hoarder 2026 lists iOS + Samsung, PayPal and Apple Pay. Treat free chips as practice.",
+      minCashout: "PayPal / Apple Pay — confirm in-app",
+      payoutMethods: ["PayPal", "Apple Pay"],
+      eligibility: "18+, enabled states.",
+      restricted: "Confirm geo at install.",
+      verification: {
+        level: "kyc",
+        steps: ["Identity / payment match before withdrawal."]
+      },
+      signupSteps: [
+        "Install Bingo Billions.",
+        "Open the room list and read Entry vs Prize.",
+        "Stay in free rooms if you want zero financial risk."
+      ],
+      howToWin: ["Skill-speed bingo vs the field."],
+      howToGetMoney: ["Cash-room winnings only."],
+      tosNotes: ["Not a sweepstakes. Entry fees fund the pool minus rake."],
+      redFlags: ["Same ad pattern as Papaya/Skillz. Free ≠ USD."],
+      sources: [
+        { title: "App Store listing", url: "https://apps.apple.com/us/app/bingo-billions-win-real-money/id6446250848" }
       ],
       lastChecked: "2026-08-12"
     },

@@ -111,7 +111,7 @@ nav a[aria-current="page"] { border-bottom: 2px solid var(--copper); }
 .lede { max-width: 62ch; font-size: 1.08rem; color: var(--ink-soft); }
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
   margin: 28px 0 8px;
 }
@@ -311,8 +311,14 @@ footer {
   .stats, .meta { grid-template-columns: 1fr 1fr; }
   .topbar { flex-direction: column; align-items: flex-start; }
   .view-toggle { margin-left: 0; }
+  .card-tools { flex-direction: row; flex-wrap: wrap; min-width: 0; }
 }
 @media (max-width: 520px) {
   .stats { grid-template-columns: 1fr 1fr; }
   .meta { grid-template-columns: 1fr; }
+}
+@media print {
+  .filters, .compare-bar, nav, .card-tools, .featured { display: none !important; }
+  .card { break-inside: avoid; box-shadow: none; }
+  body { background: white; }
 }

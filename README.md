@@ -19,24 +19,25 @@ This repo keeps those stamps on every card, with signup steps, verification rule
 
 ## What’s in the catalog
 
-- Sweepstakes & instant win (PCH, Lucktastic)
-- Sweepstakes casinos with AMOE (High 5, Pulsz, Chumba, LuckyLand, Crown Coins, Stake.us)
-- Skill tournament apps (Papaya, Skillz, Pocket7, Backspin) — listed as paid-cash
+- Sweepstakes & instant win (PCH, Lucktastic, AARP, HGTV, iHeart, magazine titles)
+- Sweepstakes casinos with AMOE (High 5, Pulsz, Chumba, LuckyLand, Crown Coins, Stake.us, McLuck, WOW Vegas, RealPrize)
+- Skill tournament apps (Papaya, Skillz, Pocket7, Backspin, Solitaire Smash, Bingo Billions) — listed as paid-cash
 - Trivia (Givling, closed HQ Trivia file)
 - Fantasy / sports picks (DraftKings freerolls, FanDuel, Fliff)
 - Creative contests (Vocal)
-- Tech & data prizes (Kaggle, Devpost, ARC Prize)
-- Directories & forums (Online-Sweepstakes, Reedsy list, r/sweepstakes)
+- Tech & data prizes (Kaggle, Devpost, ARC Prize, DrivenData, HeroX/Challenge.gov, XPRIZE, Topcoder)
+- Directories & forums (Online-Sweepstakes, Reedsy, r/sweepstakes, Sweepstakes Fanatics, Contest Girl, UltraContest, SweepsAdvantage, FreebieShark, SweepWidget)
 
-Research pass: 12 August 2026. Sources include official rules/ToS, App Store listings, and threads on r/beermoney, r/sweepstakes, r/Sweepstake, and r/EarnExtraIncome.
+Research passes: 12 August 2026 (A + B). Sources include official rules/ToS, App Store listings, and threads on r/beermoney, r/sweepstakes, r/Sweepstake, and r/EarnExtraIncome.
 
 ## Review the ledger quickly
 
 1. Open `index.html` (or the Pages URL).
-2. Use **Review table** for a one-screen scan.
-3. Filter by type, iOS vs browser, free path, and KYC level.
-4. Expand **How to sign up**, **How to obtain prize money**, and **Terms**.
-5. Click through to the official rules before you enter anything.
+2. Use **Start here** for the lowest-friction free paths.
+3. Use **Review table**, sort, and **Group cards**.
+4. Star a **watchlist** and **compare** up to three listings.
+5. **Copy notes** for an offline briefing.
+6. Click through to the official rules before you enter anything.
 
 Protocol and inclusion rules: [review.html](review.html). Taxonomy: [types.html](types.html).
 

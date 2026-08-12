@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>USD Contest Ledger — free competitions that pay real dollars</title>
+  <meta name="description" content="A reviewed catalog of iOS apps and websites with free-entry competitions that award real USD. Organized by type, signup path, and verification rules.">
+  <meta property="og:title" content="USD Contest Ledger">
+  <meta property="og:description" content="Free competitions, real USD, organized by type and payout rules.">
+  <meta property="og:image" content="assets/og-cover.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect fill='%23f3ecdc' width='64' height='64'/><text x='10' y='44' font-size='36' font-family='serif' fill='%231b2430'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <div class="mark">$</div>
+        <div>
+          <h1>USD Contest Ledger</h1>
+          <small>FreeMoneyApps · pass B · 12 Aug 2026</small>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html" aria-current="page">Catalog</a>
+        <a href="types.html">Types & rules</a>
+        <a href="review.html">How we review</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <p class="kicker">A field catalog, not a tip jar</p>
+      <h2>Free competitions that award real USD.</h2>
+      <p class="lede">
+        Apps and websites where you can enter without buying a ticket — sweepstakes,
+        mail-in AMOE casinos, trivia, fantasy freerolls, writing contests, and judged
+        tech prizes. Skill-cash games are listed only so you can see that their
+        <em>free</em> rooms usually pay gems, not dollars.
+      </p>
+      <div class="stats">
+        <div class="stat"><b id="statTotal">0</b><span>Listings reviewed</span></div>
+        <div class="stat"><b id="statFree">0</b><span>True free USD paths</span></div>
+        <div class="stat"><b id="statIos">0</b><span>Live iOS options</span></div>
+        <div class="stat"><b id="statNew">0</b><span>Added this pass</span></div>
+      </div>
+      <div class="notice">
+        This is a research desk, not a sponsor. Official rules win every argument.
+        US tax forms apply at $600+. Nobody legitimate will ever ask you to pay a fee to collect a prize.
+        Pass B adds brand-media sweeps, more AMOE casinos, judged prize platforms, and extra directories.
+      </div>
+      <p class="kicker">Start here if you want the least friction</p>
+      <div class="featured" id="featured"></div>
+    </section>
+
+    <div class="filters" id="filters">
+      <div class="filter-row">
+        <label>Search</label>
+        <input class="search" id="search" type="search" placeholder="PayPal, KYC, bingo, Kaggle…">
+        <div class="view-toggle">
+          <button class="chip" data-group="view" data-value="cards">Cards</button>
+          <button class="chip" data-group="view" data-value="table">Review table</button>
+          <button class="chip" data-group="view" data-value="compare">Compare</button>
+          <button class="chip" type="button" data-act="expand">Expand all</button>
+          <button class="chip" type="button" data-act="collapse">Collapse</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <label>Type</label>
+        <button class="chip" data-group="type" data-value="all">All</button>
+        <button class="chip" data-group="type" data-value="sweepstakes">Sweepstakes</button>
+        <button class="chip" data-group="type" data-value="sweeps-casino">Sweeps casinos</button>
+        <button class="chip" data-group="type" data-value="skill">Skill tournaments</button>
+        <button class="chip" data-group="type" data-value="trivia">Trivia</button>
+        <button class="chip" data-group="type" data-value="sports">Fantasy / picks</button>
+        <button class="chip" data-group="type" data-value="creative">Creative</button>
+        <button class="chip" data-group="type" data-value="tech">Tech / data</button>
+        <button class="chip" data-group="type" data-value="directory">Directories</button>
+      </div>
+      <div class="filter-row">
+        <label>Signup</label>
+        <button class="chip" data-group="platform" data-value="all">Any</button>
+        <button class="chip" data-group="platform" data-value="ios">iOS app</button>
+        <button class="chip" data-group="platform" data-value="web">Browser</button>
+      </div>
+      <div class="filter-row">
+        <label>Free path</label>
+        <button class="chip" data-group="free" data-value="all">Any</button>
+        <button class="chip" data-group="free" data-value="full">Free USD path</button>
+        <button class="chip" data-group="free" data-value="amoes">Free + AMOE</button>
+        <button class="chip" data-group="free" data-value="partial">Some free events</button>
+        <button class="chip" data-group="free" data-value="paid-cash">Cash needs fee</button>
+      </div>
+      <div class="filter-row">
+        <label>Status</label>
+        <button class="chip" data-group="status" data-value="all">Any</button>
+        <button class="chip" data-group="status" data-value="live">Active</button>
+        <button class="chip" data-group="status" data-value="mixed">Mixed</button>
+        <button class="chip" data-group="status" data-value="caution">Caution</button>
+        <button class="chip" data-group="status" data-value="inactive">Inactive</button>
+      </div>
+      <div class="filter-row">
+        <label>Verify</label>
+        <button class="chip" data-group="verify" data-value="all">Any</button>
+        <button class="chip" data-group="verify" data-value="account">Account</button>
+        <button class="chip" data-group="verify" data-value="eligibility">Eligibility</button>
+        <button class="chip" data-group="verify" data-value="kyc">Full KYC</button>
+        <button class="chip" data-group="verify" data-value="tax">Tax forms</button>
+      </div>
+      <div class="filter-row">
+        <label>Sort</label>
+        <button class="chip" data-group="sort" data-value="type">By type</button>
+        <button class="chip" data-group="sort" data-value="name">Name</button>
+        <button class="chip" data-group="sort" data-value="free">Free path</button>
+        <button class="chip" data-group="sort" data-value="verify">Verification</button>
+        <button class="chip" data-group="sort" data-value="status">Status</button>
+        <button class="chip" data-group="group" data-value="on">Group cards</button>
+        <button class="chip" data-group="group" data-value="off">Flat list</button>
+        <button class="chip" data-group="watch" data-value="on">Watchlist only</button>
+        <button class="chip" data-group="watch" data-value="off">All</button>
+      </div>
+      <div class="filter-row">
+        <label>Showing</label>
+        <span><b id="count">0</b> listings</span>
+      </div>
+    </div>
+
+    <div id="cards" class="grid"></div>
+    <div id="compareWrap" hidden></div>
+    <div id="tableWrap" class="table-wrap" hidden>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Signup</th>
+            <th>Verification</th>
+            <th>Cash-out floor</th>
+            <th>Pays via</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="compare-bar" id="compareBar" hidden>
+      <strong>Compare</strong>
+      <div class="compare-picks"></div>
+      <button type="button" class="btn" data-act="open-compare">Open side-by-side</button>
+      <button type="button" class="chip" data-act="clear-compare">Clear</button>
+    </div>
+
+    <footer>
+      <p>USD Contest Ledger is an independent compilation. It is not affiliated with Apple, PCH, Papaya, Skillz, DraftKings, AARP, HGTV, or any listed operator. Gambling, sweeps, and contest laws vary by state. Play only where legal. 18+/21+.</p>
+    </footer>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -2,8 +2,8 @@
    Each listing is sourced from official rules/ToS plus recent public reporting.
    Terms change. Always open the official rules before you enter. */
 window.LEDGER = {
-  reviewed: "2026-08-12",
-  pass: "B",
+  reviewed: "2026-08-17",
+  pass: "C",
   featured: ["pch", "aarp", "lucktastic", "kaggle", "online-sweepstakes", "pulsz"],
   addedThisPass: [
     "aarp", "hgtv", "iheart", "meredith", "mcluck", "wowvegas", "realprize",
@@ -11,6 +11,7 @@ window.LEDGER = {
     "contest-girl", "ultracontest", "sweepsadvantage", "freebieshark",
     "sweepwidget", "solitaire-smash", "bingo-billions"
   ],
+  addedThisPassC: ["espn-pickem", "espn-survivor", "espn-wintotals", "espn-playoff", "espn-pigskin", "espn-cfb", "cbs-pro-pickem", "cbs-cfb-pickem", "fox-super6", "fanatics-survivor", "prizepicks-jackpot", "usatoday-survivor", "yahoo-survival", "pickwatch", "beat-the-geek", "tsg-playoff", "football-nation", "favorites-pickem", "thelines-survivor", "rams-pickem", "fanduel-shuffle", "betmgm-survivor", "dk-f2p", "draft-pro", "splash-mock", "fftoday-draft", "rotoballer", "apex-fantasy", "fpl-official", "fpl-second-chance", "fpl-draft", "fantasy-efl", "telegraph-ff", "ucl-fantasy", "pl-predictor", "pooltracker-epl", "ffs-fpl", "ffs-ucl", "ffs-efl", "ffs-tattico", "football-mad", "fantasy-arena", "lazyfpl", "fplhub", "bona-fide", "olka", "fplmanager-india", "fplstore", "pitchbooking", "sky-super6", "bet365-6scores", "betmgm-goldengoals", "paddypower-drop", "dirty-dozen", "the-special-one", "andys-predictor", "verse-gaming", "lockmypicks", "pickem-sports", "sports-predictor", "goaloracle", "oddspedia", "streak-for-cash", "gamersaloon", "playerslounge", "officepoolstop", "funofficepools", "mysurvivorpool", "gridirongames", "squarespool", "myfantasyleague", "trofeo", "dabble", "parlayplay"],
   types: [
     {
       id: "sweepstakes",
@@ -51,6 +52,11 @@ window.LEDGER = {
       id: "directory",
       name: "Directories & forums",
       blurb: "Places that list many current contests. Use them to find new promotions, then verify each contest’s own official rules."
+    },
+    {
+      id: "pools",
+      name: "Free pool & league platforms",
+      blurb: "Free tools for running your own pick’em, survivor, squares, or fantasy league. The platform is free; the prize pot is funded by your group."
     }
   ],
   verificationLevels: [
@@ -2035,6 +2041,1871 @@ window.LEDGER = {
         { title: "ArchiveTeam HQ Trivia", url: "https://wiki.archiveteam.org/index.php/HQ_Trivia" }
       ],
       lastChecked: "2026-08-12"
+    },
+/* ================= PASS C — sports, fantasy, prediction, esports, pools (2026-08-17) ================= */
+    {
+      id: "espn-pickem",
+      name: "ESPN NFL Pick'em",
+      short: "Free season-long pick'em. Ten free entries a week; 58 prizes split the six-figure pot.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/nfl-pickem-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/nfl-pickem-2026/make-picks",
+      prizeUsd: "$102,000 total across 58 prizes",
+      prizeNote: "Free ESPN account. Weekly and season prizes; the grand prize is the headline number.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout", "Check or ACH after verification"],
+      eligibility: "US, 18+ (21+ where required), free ESPN account.",
+      restricted: "Void where prohibited. Employees of ESPN/Disney typically ineligible.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winners verified and notified by ESPN before payout."]
+      },
+      sources: [
+        { title: "ESPN NFL Pick'em", url: "https://fantasy.espn.com/games/nfl-pickem-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "espn-survivor",
+      name: "ESPN NFL Survivor",
+      short: "Pick one winning team a week, no repeats. Outlast everyone for the grand prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/nfl-survivor-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/nfl-survivor-2026/make-picks",
+      prizeUsd: "$25,000 grand prize",
+      prizeNote: "Up to 25 free entries. One wrong pick eliminates that entry.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+ (21+ where required), free ESPN account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "ESPN NFL Survivor", url: "https://fantasy.espn.com/games/nfl-survivor-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "espn-wintotals",
+      name: "ESPN NFL Win Totals",
+      short: "Predict every team's regular-season win total. Free to enter.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/nfl-win-totals-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/nfl-win-totals-2026/make-picks",
+      prizeUsd: "$5,000",
+      prizeNote: "Free ESPN account. One set of predictions per rules.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free ESPN account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "ESPN NFL Win Totals", url: "https://fantasy.espn.com/games/nfl-win-totals-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "espn-playoff",
+      name: "ESPN NFL Playoff Predictor",
+      short: "Predict the playoff field before the season. Free entry.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/nfl-playoff-predictor-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/nfl-playoff-predictor-2026/make-picks",
+      prizeUsd: "$10,000",
+      prizeNote: "Free ESPN account. Accuracy on playoff teams and seeding decides the winner.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free ESPN account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "ESPN NFL Playoff Predictor", url: "https://fantasy.espn.com/games/nfl-playoff-predictor-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "espn-pigskin",
+      name: "ESPN Pigskin Bracket Challenge",
+      short: "Bracket every playoff game. Free to enter; big grand prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/nfl-playoff-football-challenge-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/nfl-playoff-football-challenge-2026/make-picks",
+      prizeUsd: "$50,000",
+      prizeNote: "Free ESPN account. Opens near the postseason.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free ESPN account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "ESPN Pigskin Bracket Challenge", url: "https://fantasy.espn.com/games/nfl-playoff-football-challenge-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "espn-cfb",
+      name: "ESPN College Football Pick'em",
+      short: "College version of ESPN Pick'em with 46 prizes across the season.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.espn.com/games/college-football-pickem-2026/make-picks",
+      rulesUrl: "https://fantasy.espn.com/games/college-football-pickem-2026/make-picks",
+      prizeUsd: "$86,000 total (46 prizes)",
+      prizeNote: "Free ESPN account. Same format as the NFL game, college slates.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free ESPN account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free ESPN account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "ESPN College Football Pick'em", url: "https://fantasy.espn.com/games/college-football-pickem-2026/make-picks" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "cbs-pro-pickem",
+      name: "CBS Sports Pro Football Pick'em",
+      short: "Weekly and season-long pick'em with a six-figure perfect-week jackpot.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.cbssports.com/fantasy/football/games/pickem/rules",
+      rulesUrl: "https://www.cbssports.com/fantasy/football/games/pickem/rules",
+      prizeUsd: "$1K/week + $5K season + $100K perfect",
+      prizeNote: "Free CBS Sports account. Perfect-week prize requires a flawless slate.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free CBS Sports account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free CBS Sports account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "CBS Sports Pro Football Pick'em rules", url: "https://www.cbssports.com/fantasy/football/games/pickem/rules" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "cbs-cfb-pickem",
+      name: "CBS Sports College Football Pick'em",
+      short: "College football pick'em with weekly, season, and perfect-week prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.cbssports.com/fantasy/college-football/games/pickem/rules",
+      rulesUrl: "https://www.cbssports.com/fantasy/college-football/games/pickem/rules",
+      prizeUsd: "$1K/wk + $5K season + $100K perfect",
+      prizeNote: "Free CBS Sports account. College slates each week.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free CBS Sports account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free CBS Sports account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "CBS Sports College Football Pick'em", url: "https://www.cbssports.com/fantasy/college-football/games/pickem/rules" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fox-super6",
+      name: "FOX Super 6",
+      short: "Predict six outcomes for a shot at weekly five-figure cash. Free to play in 49 states.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.foxsports.com/fox-super-6",
+      rulesUrl: "https://www.foxsports.com/fox-super-6",
+      prizeUsd: "$10K–$100K weekly",
+      prizeNote: "Free FOX Sports account. Different contests (NFL, CFB, soccer) run weekly.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free FOX Sports account (49 states).",
+      restricted: "Not available in Washington state.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free FOX Sports account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "FOX Super 6", url: "https://www.foxsports.com/fox-super-6" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fanatics-survivor",
+      name: "Fanatics NFL Survivor League",
+      short: "Free survivor league inside the Fanatics app. $1M guaranteed, grows with each player.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://betfanatics.com/",
+      rulesUrl: "https://www.legalsportsreport.com/240860/fanatics-nfl-survivor-league/",
+      prizeUsd: "$1M+ guaranteed (up to $10M)",
+      prizeNote: "One team per week, no repeats. Prize splits if multiple players survive. Open to all 50 states.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free Fanatics account.",
+      restricted: "One entry per person. See the live app for the current prize table.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Fanatics account.", "Winner verification before payout."]
+      },
+      sources: [
+        { title: "Fanatics NFL Survivor League", url: "https://www.legalsportsreport.com/240860/fanatics-nfl-survivor-league/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "prizepicks-jackpot",
+      name: "PrizePicks Free NFL Jackpot",
+      short: "Weekly free-to-play game: pick the first touchdown scorer in eight games for a share of $1M.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.prizepicks.com/",
+      rulesUrl: "https://www.prizepicks.com/press-news/prizepicks-launches-1-million-free-to-play-jackpot-contest",
+      prizeUsd: "$1,000,000 weekly (split among perfect entries)",
+      prizeNote: "All eight first-touchdown picks must hit to share the jackpot. Partial correct picks earn boosts or free lineups.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+/21+ by state, free PrizePicks account.",
+      restricted: "Runs weekly during the NFL season. Confirm live entry window in the app.",
+      verification: {
+        level: "kyc",
+        steps: ["Free PrizePicks account.", "Identity verification for cash withdrawal."]
+      },
+      sources: [
+        { title: "PrizePicks $1M free-to-play jackpot", url: "https://www.prizepicks.com/press-news/prizepicks-launches-1-million-free-to-play-jackpot-contest" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "usatoday-survivor",
+      name: "USA TODAY Pro Football Survivor",
+      short: "Season-long survivor game with a $5,000 prize. Free USA TODAY account.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.usatoday.com/sports/contests/survivor-pool",
+      rulesUrl: "https://www.usatoday.com/sports/contests/survivor-pool",
+      prizeUsd: "$5,000",
+      prizeNote: "Pick one team to win each week without repeating. Free to enter.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free USA TODAY account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free USA TODAY account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "USA TODAY Pro Football Survivor", url: "https://www.usatoday.com/sports/contests/survivor-pool" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "yahoo-survival",
+      name: "Yahoo Survival Football",
+      short: "Yahoo's free survivor game with cash prizes for the last players standing.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://football.fantasysports.yahoo.com/",
+      rulesUrl: "https://football.fantasysports.yahoo.com/",
+      prizeUsd: "Cash prizes (historically $6K+)",
+      prizeNote: "Free Yahoo account. Confirm the current season prize table before playing.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free Yahoo account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Yahoo account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Yahoo Survival Football", url: "https://football.fantasysports.yahoo.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "pickwatch",
+      name: "NFL Pickwatch Contest",
+      short: "Pick every game against the spread. Free season contest with weekly prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://nflpickwatch.com/contest/nfl/2026",
+      rulesUrl: "https://nflpickwatch.com/contest/nfl/2026",
+      prizeUsd: "$1,000 season / $100 weekly",
+      prizeNote: "Free Pickwatch account. Weekly and season-long leaderboards.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "Open to eligible jurisdictions. Free account.",
+      restricted: "Check contest terms for residency limits.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Pickwatch account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "NFL Pickwatch Contest", url: "https://nflpickwatch.com/contest/nfl/2026" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "beat-the-geek",
+      name: "Beat The Geek",
+      short: "Weekly pick'em with cash and season prizes, including an NFL trip.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.thesportsgeek.com/contests/beat-the-geek/",
+      rulesUrl: "https://www.thesportsgeek.com/contests/beat-the-geek/",
+      prizeUsd: "NFL trip + $500/wk + $2,500 season",
+      prizeNote: "Free TheSportsGeek account, 21+. Weekly winners plus season-long prizes.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 21+, free TSG account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free TSG account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Beat The Geek", url: "https://www.thesportsgeek.com/contests/beat-the-geek/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "tsg-playoff",
+      name: "TheSportsGeek NFL Playoff Pick'em",
+      short: "Postseason pick'em with an Amazon gift card prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.thesportsgeek.com/contests/nfl-playoff-pickem/",
+      rulesUrl: "https://www.thesportsgeek.com/contests/nfl-playoff-pickem/",
+      prizeUsd: "$500 Amazon gift card",
+      prizeNote: "Free TSG account. Opens near the playoffs.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Gift card"],
+      eligibility: "US, free TSG account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free TSG account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "TheSportsGeek NFL Playoff Pick'em", url: "https://www.thesportsgeek.com/contests/nfl-playoff-pickem/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "football-nation",
+      name: "Football Nation USA Weekly Pick'Em",
+      short: "Weekly pick'em with a guaranteed $100 weekly prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.footballnationusa.com/pickems",
+      rulesUrl: "https://www.footballnationusa.com/pickems",
+      prizeUsd: "$100 every week",
+      prizeNote: "Free account. Weekly winner takes the cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Football Nation USA Pick'Em", url: "https://www.footballnationusa.com/pickems" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "favorites-pickem",
+      name: "The Favorites Podcast Pick'em",
+      short: "Action Network's free pick'em with a six-figure pool and weekly payouts.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.actionnetwork.com/nfl/the-favorites-podcast-free-100k-pro-football-pick-em-contest",
+      rulesUrl: "https://www.actionnetwork.com/nfl/the-favorites-podcast-free-100k-pro-football-pick-em-contest",
+      prizeUsd: "$120,000 prize pool",
+      prizeNote: "Free Action Network account, 21+. Top entries paid weekly plus season pool.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 21+, free Action Network account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Action Network account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "The Favorites Podcast Pick'em", url: "https://www.actionnetwork.com/nfl/the-favorites-podcast-free-100k-pro-football-pick-em-contest" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "thelines-survivor",
+      name: "TheLines Free NFL Survivor",
+      short: "Free survivor pool run by TheLines with a five-figure prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.thelines.com/free-nfl-contest-pools-games-week-1-2024/",
+      rulesUrl: "https://www.thelines.com/free-nfl-contest-pools-games-week-1-2024/",
+      prizeUsd: "$10,000",
+      prizeNote: "Free TheLines account. Also runs weekly NFL challenge pools.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "TheLines Free NFL Survivor", url: "https://www.thelines.com/free-nfl-contest-pools-games-week-1-2024/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "rams-pickem",
+      name: "LA Rams Pick'em",
+      short: "Team-run pick'em with resort stays, signed gear, and season tickets on offer.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.therams.com/news/rams-pick-em-launching-2026-season-season-tickets-player-signed-merchandise-more-prizes-for-predictions",
+      rulesUrl: "https://www.therams.com/news/rams-pick-em-launching-2026-season-season-tickets-player-signed-merchandise-more-prizes-for-predictions",
+      prizeUsd: "Resort stay + signed merch + season tickets",
+      prizeNote: "Free Rams account. Prizes are experiences/merchandise, not cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "US, 18+, free Rams account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Rams account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "LA Rams Pick'em", url: "https://www.therams.com/news/rams-pick-em-launching-2026-season-season-tickets-player-signed-merchandise-more-prizes-for-predictions" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fanduel-shuffle",
+      name: "FanDuel Daily Shuffle",
+      short: "FanDuel's free-to-play weekly game. Six daily picks can win a share of $100,000.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.fanduel.com/",
+      rulesUrl: "https://www.bleachernation.com/betting/2026/05/31/fanduel-contests-529/",
+      prizeUsd: "$100,000 weekly prize pool",
+      prizeNote: "Free with a FanDuel Sportsbook account. 3-5 correct picks earn profit-boost tokens instead of cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Sportsbook wallet", "Withdrawal after verification"],
+      eligibility: "US, 21+, FanDuel Sportsbook account in an eligible state.",
+      restricted: "State list changes. Six correct picks required for a cash share.",
+      verification: {
+        level: "kyc",
+        steps: ["FanDuel Sportsbook account.", "Identity verification before withdrawal."]
+      },
+      sources: [
+        { title: "FanDuel Daily Shuffle", url: "https://www.bleachernation.com/betting/2026/05/31/fanduel-contests-529/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "betmgm-survivor",
+      name: "BetMGM Football Survivor",
+      short: "Free-to-enter survivor pool with a $100,000 grand prize. No wager required.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://sports.betmgm.com/en/blog/nfl/win-betmgm-free-football-survivor-challenge-bm03/",
+      rulesUrl: "https://sports.betmgm.com/en/blog/nfl/win-betmgm-free-football-survivor-challenge-bm03/",
+      prizeUsd: "$100,000",
+      prizeNote: "No entry fee or wager. KYC-verified BetMGM account in an eligible state required.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Sportsbook wallet", "Withdrawal after verification"],
+      eligibility: "US, 21+, KYC-verified BetMGM Sports account in an eligible state.",
+      restricted: "Limited to specific states. Prize splits if multiple survivors remain.",
+      verification: {
+        level: "kyc",
+        steps: ["BetMGM account with KYC.", "Winner verification before payout."]
+      },
+      sources: [
+        { title: "BetMGM Free Survivor Challenge", url: "https://sports.betmgm.com/en/blog/nfl/win-betmgm-free-football-survivor-challenge-bm03/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "dk-f2p",
+      name: "DraftKings Free-to-Play contests",
+      short: "Rotating free pools in the DraftKings Sportsbook promotions tab. Some pay cash or bonus bets.",
+      type: "sports",
+      status: "mixed",
+      freePath: "partial",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.draftkings.com/",
+      rulesUrl: "https://sportsbooksonline.com/articles/draftkings-pick-em",
+      prizeUsd: "Free pools rotate; up to $500,000 top-prize pick'em historically",
+      prizeNote: "Open the Promotions tab and filter for free entry. Many free plays award bonus bets rather than withdrawable cash.",
+      minCashout: "Varies; identity verification required to withdraw",
+      payoutMethods: ["Sportsbook wallet", "Bonus bets", "Withdrawal after verification"],
+      eligibility: "US, 21+, DraftKings account in an eligible state.",
+      restricted: "State list changes. Read each pool's terms before entering.",
+      verification: {
+        level: "kyc",
+        steps: ["DraftKings account.", "Identity verification before withdrawal."]
+      },
+      sources: [
+        { title: "DraftKings free pick'em (roundup)", url: "https://sportsbooksonline.com/articles/draftkings-pick-em" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "draft-pro",
+      name: "Draft Pro Perfect Draft Challenge",
+      short: "Predict all 32 first-round NFL Draft picks for a million-dollar prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.prnewswire.com/news-releases/the-draft-pro-launches-free-1-000-000-perfect-draft-challenge-ahead-of-the-2026-nfl-draft-302736409.html",
+      rulesUrl: "https://www.prnewswire.com/news-releases/the-draft-pro-launches-free-1-000-000-perfect-draft-challenge-ahead-of-the-2026-nfl-draft-302736409.html",
+      prizeUsd: "$1,000,000 (perfect 32/32)",
+      prizeNote: "Free app download. Perfect draft required for the headline prize; other prizes may exist.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free app account.",
+      restricted: "Perfect 32/32 required for the top prize.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free app account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Draft Pro Perfect Draft Challenge", url: "https://www.prnewswire.com/news-releases/the-draft-pro-launches-free-1-000-000-perfect-draft-challenge-ahead-of-the-2026-nfl-draft-302736409.html" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "splash-mock",
+      name: "Splash Sports NFL Mock Draft",
+      short: "Mock the NFL Draft for a share of $10,000 in prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://nflmockdraft.app.splashsports.com/nfl-mock-draft/my-entry",
+      rulesUrl: "https://nflmockdraft.app.splashsports.com/nfl-mock-draft/my-entry",
+      prizeUsd: "$10,000 in prizes",
+      prizeNote: "Free Splash account. Opens before the NFL Draft.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free Splash account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Splash account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Splash Sports NFL Mock Draft", url: "https://nflmockdraft.app.splashsports.com/nfl-mock-draft/my-entry" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fftoday-draft",
+      name: "FFToday NFL Draft Contest",
+      short: "Mock the first round of the NFL Draft for cash and prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.fftoday.com/contests/draftcontest.php?o=3",
+      rulesUrl: "https://www.fftoday.com/contests/draftcontest.php?o=3",
+      prizeUsd: "$100 cash + prizes",
+      prizeNote: "Free FFToday account. Draft-season contest.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free FFToday account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free FFToday account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "FFToday NFL Draft Contest", url: "https://www.fftoday.com/contests/draftcontest.php?o=3" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "rotoballer",
+      name: "RotoBaller Challenge",
+      short: "Free season-long fantasy football tournament with cash and premium prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.rotoballer.com/free-fantasy-football-tournament-rotoballer-challenge-2026/1900460",
+      rulesUrl: "https://www.rotoballer.com/free-fantasy-football-tournament-rotoballer-challenge-2026/1900460",
+      prizeUsd: "$500 + 50x Premium",
+      prizeNote: "Free Fleaflicker account. Draft before the deadline.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free Fleaflicker account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free Fleaflicker account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "RotoBaller Challenge", url: "https://www.rotoballer.com/free-fantasy-football-tournament-rotoballer-challenge-2026/1900460" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "apex-fantasy",
+      name: "Apex Fantasy Free League Entry",
+      short: "Free league entry (worth $125) via email signup.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://apexfantasyleagues.com/",
+      rulesUrl: "https://apexfantasyleagues.com/",
+      prizeUsd: "$125 league entry",
+      prizeNote: "Free email signup. Prize is a free paid-league entry, not direct cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League entry credit"],
+      eligibility: "US, 18+, free account.",
+      restricted: "Void where prohibited.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free email signup.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Apex Fantasy", url: "https://apexfantasyleagues.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fpl-official",
+      name: "Official FPL (Premier League)",
+      short: "The free Premier League fantasy game with VIP trips, hardware, and gear for top finishers.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://fantasy.premierleague.com/help/rules",
+      prizeUsd: "VIP trip + Surface Laptop + Puma gear",
+      prizeNote: "Free FPL account. Prizes are experiences and merchandise, not cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "Global (some prize eligibility limits), free FPL account.",
+      restricted: "See official rules for prize eligibility by region.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free FPL account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Official Fantasy Premier League", url: "https://fantasy.premierleague.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fpl-second-chance",
+      name: "FPL Second Chance League",
+      short: "Official FPL side competition with Puma gear and an EA FC 26 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.premierleague.com/en/news/4220308/the-second-chance-league-is-live-in-fantasy",
+      rulesUrl: "https://www.premierleague.com/en/news/4220308/the-second-chance-league-is-live-in-fantasy",
+      prizeUsd: "Puma gear + EA FC 26 + FPL bundle",
+      prizeNote: "Free FPL account. Prize is gear, not cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "Free FPL account, eligible regions.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free FPL account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "FPL Second Chance League", url: "https://www.premierleague.com/en/news/4220308/the-second-chance-league-is-live-in-fantasy" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fpl-draft",
+      name: "FPL Draft",
+      short: "Premier League's free draft game. Compete in head-to-head leagues.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://draft.premierleague.com/",
+      rulesUrl: "https://draft.premierleague.com/",
+      prizeUsd: "Prizes (league-dependent)",
+      prizeNote: "Free FPL account. Most draft leagues are free with friends.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "Free FPL account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free FPL account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "FPL Draft", url: "https://draft.premierleague.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fantasy-efl",
+      name: "Fantasy EFL",
+      short: "The EFL's official free fantasy game with published prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.efl.com/prizes",
+      rulesUrl: "https://fantasy.efl.com/prizes",
+      prizeUsd: "Prizes (see official prize page)",
+      prizeNote: "Free EFL account.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "Free EFL account, eligible regions.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free EFL account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Fantasy EFL prizes", url: "https://fantasy.efl.com/prizes" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "telegraph-ff",
+      name: "Telegraph Fantasy Football",
+      short: "Free UK fantasy football with a cash first prize (5 free teams).",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasyfootball.telegraph.co.uk/",
+      rulesUrl: "https://fantasyfootball.telegraph.co.uk/",
+      prizeUsd: "£3,000 first place",
+      prizeNote: "Free account (up to 5 free teams). UK-focused.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK, 18+, free account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Telegraph Fantasy Football", url: "https://fantasyfootball.telegraph.co.uk/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "ucl-fantasy",
+      name: "UCL Fantasy",
+      short: "UEFA's free Champions League fantasy game with a final trip and a PS5.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://gaming.uefa.com/en/uclfantasy",
+      rulesUrl: "https://gaming.uefa.com/en/uclfantasy",
+      prizeUsd: "UCL Final trip + PS5",
+      prizeNote: "Free UEFA account. Prizes are experiences and hardware, not cash.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Prize fulfillment"],
+      eligibility: "Global, free UEFA account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free UEFA account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "UCL Fantasy", url: "https://gaming.uefa.com/en/uclfantasy" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "pl-predictor",
+      name: "Premier League Predictor",
+      short: "Free UK predictor with weekly cash prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://premierleaguepredictor.co.uk/",
+      rulesUrl: "https://premierleaguepredictor.co.uk/",
+      prizeUsd: "Weekly cash prizes",
+      prizeNote: "Free account. UK-focused.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK, 18+, free account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Premier League Predictor", url: "https://premierleaguepredictor.co.uk/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "pooltracker-epl",
+      name: "Pooltracker EPL Predictor",
+      short: "Free EPL score predictor for private pools with friends.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.pooltracker.com/game_info/english-premier-league-predictor.asp",
+      rulesUrl: "https://www.pooltracker.com/game_info/english-premier-league-predictor.asp",
+      prizeUsd: "Pools with friends",
+      prizeNote: "Free Pooltracker account. Prizes decided by your group.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account.",
+      restricted: "See site.",
+      verification: {
+        level: "account",
+        steps: ["Free Pooltracker account."]
+      },
+      sources: [
+        { title: "Pooltracker EPL Predictor", url: "https://www.pooltracker.com/game_info/english-premier-league-predictor.asp" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "ffs-fpl",
+      name: "Fantasy Football Scout FPL league",
+      short: "Free-to-join FPL mini-league with a £1,200 cash pool plus memberships.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.fantasyfootballscout.co.uk/2026/08/14/win-5000-worth-of-prizes-with-fantasy-football-scout-in-2026-27",
+      code: "eikrq4",
+      prizeUsd: "£1,200 cash + memberships",
+      prizeNote: "Join in FPL via Leagues > Join Private League with the code. Free to join.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account, eligible regions.",
+      restricted: "Follow the organizer's entry rules.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code. Organizer verifies winners."]
+      },
+      sources: [
+        { title: "Fantasy Football Scout league", url: "https://www.fantasyfootballscout.co.uk/2026/08/14/win-5000-worth-of-prizes-with-fantasy-football-scout-in-2026-27" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "ffs-ucl",
+      name: "FFScout UCL Fantasy league",
+      short: "FFScout's free Champions League fantasy league with a £150 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.fantasyfootballscout.co.uk/mini-leagues",
+      code: "TyhVfm",
+      prizeUsd: "£150 + Mega Bundle",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "UCL Fantasy account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["UCL Fantasy account.", "Enter league code."]
+      },
+      sources: [
+        { title: "FFScout mini-leagues", url: "https://www.fantasyfootballscout.co.uk/mini-leagues" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "ffs-efl",
+      name: "FFScout Fantasy EFL league",
+      short: "FFScout's free Fantasy EFL league with a Mega Bundle prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.efl.com/",
+      rulesUrl: "https://www.fantasyfootballscout.co.uk/mini-leagues",
+      code: "FFSCOUT1",
+      prizeUsd: "Mega Bundle",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "Fantasy EFL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["Fantasy EFL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "FFScout mini-leagues", url: "https://www.fantasyfootballscout.co.uk/mini-leagues" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "ffs-tattico",
+      name: "FFScout Tattico Serie A league",
+      short: "FFScout's free Serie A fantasy league with a £750 prize pool.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasyfootballscout.co.uk/2026/08/15/join-our-tattico-fantasy-serie-a-league-win-750-in-prizes",
+      rulesUrl: "https://fantasyfootballscout.co.uk/2026/08/15/join-our-tattico-fantasy-serie-a-league-win-750-in-prizes",
+      prizeUsd: "£750 total",
+      prizeNote: "Free to join via the organizer's link.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "Tattico Fantasy account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["Tattico account.", "Join via organizer link."]
+      },
+      sources: [
+        { title: "FFScout Tattico Serie A league", url: "https://fantasyfootballscout.co.uk/2026/08/15/join-our-tattico-fantasy-serie-a-league-win-750-in-prizes" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "football-mad",
+      name: "Football Mad FPL league",
+      short: "Free FPL mini-league with a £5,000 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://fpltips.com/fpl-leagues-with-prizes/",
+      code: "u7vy7w",
+      prizeUsd: "£5,000",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "FPL leagues with prizes", url: "https://fpltips.com/fpl-leagues-with-prizes/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fantasy-arena",
+      name: "Fantasy Arena FPL league",
+      short: "Free FPL mini-league with a $1,500 prize across season and monthly.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://allaboutfpl.com/2025/07/list-of-free-to-join-prize-fpl-mini-leagues-ahead-of-25-26-season/",
+      code: "hs3v95",
+      prizeUsd: "$1,500 (season + monthly)",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "Free-to-join FPL prize leagues", url: "https://allaboutfpl.com/2025/07/list-of-free-to-join-prize-fpl-mini-leagues-ahead-of-25-26-season/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "lazyfpl",
+      name: "LazyFPL league",
+      short: "Free FPL mini-league with a £750 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.lazyfpl.com/p/fpl-leagues-with-prizes",
+      code: "ni3o0l",
+      prizeUsd: "£750",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "LazyFPL prize leagues", url: "https://www.lazyfpl.com/p/fpl-leagues-with-prizes" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fplhub",
+      name: "FPL Hub league",
+      short: "Free FPL mini-league with a £1,250 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://fpltips.com/fpl-leagues-with-prizes/",
+      code: "00ul99",
+      prizeUsd: "£1,250",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "FPL leagues with prizes", url: "https://fpltips.com/fpl-leagues-with-prizes/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "bona-fide",
+      name: "Bona Fide Sports league",
+      short: "Free FPL mini-league with a $200 first prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.reddit.com/r/FantasyPL/comments/1v4h6th/fpl_202627_minileagues_thread/",
+      code: "c7blsu",
+      prizeUsd: "$200 first",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "r/FantasyPL minileagues thread", url: "https://www.reddit.com/r/FantasyPL/comments/1v4h6th/fpl_202627_minileagues_thread/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "olka",
+      name: "OLKA Express league",
+      short: "Free FPL mini-league with a €1,000 first prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.reddit.com/r/FantasyPL/comments/1m6naoy/league_codes_megathread/",
+      code: "5nysyw",
+      prizeUsd: "€1,000 first / €500 second",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "r/FantasyPL league codes megathread", url: "https://www.reddit.com/r/FantasyPL/comments/1m6naoy/league_codes_megathread/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fplmanager-india",
+      name: "FPLManagerIndia league",
+      short: "Free FPL mini-league with a PS5 and £200.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://allaboutfpl.com/2025/07/list-of-free-to-join-prize-fpl-mini-leagues-ahead-of-25-26-season/",
+      code: "10ev25",
+      prizeUsd: "PS5 + £200",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "Free-to-join FPL prize leagues", url: "https://allaboutfpl.com/2025/07/list-of-free-to-join-prize-fpl-mini-leagues-ahead-of-25-26-season/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "fplstore",
+      name: "fplStore_ league",
+      short: "Free FPL mini-league with a £500 voucher.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://fpltips.com/fpl-leagues-with-prizes/",
+      code: "ijuoh4",
+      prizeUsd: "£500 voucher",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "FPL leagues with prizes", url: "https://fpltips.com/fpl-leagues-with-prizes/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "pitchbooking",
+      name: "Pitchbooking.com league",
+      short: "Free FPL mini-league with a £150 gift card.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://fantasy.premierleague.com/",
+      rulesUrl: "https://www.reddit.com/r/FantasyPL/comments/wecme0/list_of_free_to_enter_fpl_leagues_with_prizes/",
+      code: "5hwilh",
+      prizeUsd: "£150 gift card",
+      prizeNote: "Free to join with the league code.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["League organizer payout"],
+      eligibility: "FPL account.",
+      restricted: "Organizer's rules apply.",
+      verification: {
+        level: "account",
+        steps: ["FPL account.", "Enter league code."]
+      },
+      sources: [
+        { title: "Free FPL leagues with prizes", url: "https://www.reddit.com/r/FantasyPL/comments/wecme0/list_of_free_to_enter_fpl_leagues_with_prizes/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "sky-super6",
+      name: "Sky Bet Super 6",
+      short: "Free-to-play score prediction game. Six correct scores win £250,000 (rollovers to £1M).",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://super6.skysports.com/",
+      rulesUrl: "https://super6.skysports.com/",
+      prizeUsd: "£250,000 (up to £1M rollovers)",
+      prizeNote: "Free to play. Requires a free Sky Bet account with UK identity verification.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, free Sky Bet account.",
+      restricted: "KYC (ID + address) required for the account.",
+      verification: {
+        level: "kyc",
+        steps: ["Free Sky Bet account.", "UK identity verification.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Sky Bet Super 6", url: "https://super6.skysports.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "bet365-6scores",
+      name: "bet365 6 Scores Challenge",
+      short: "Predict six Premier League scores weekly for a share of £250,000.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.bet365.com/",
+      rulesUrl: "https://www.bettingodds.com/news/bet365-6-scores-challenge-predictions-premier-league-matchweek-29-2026",
+      prizeUsd: "£250,000",
+      prizeNote: "Free to play with a bet365 account. UK KYC applies.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, bet365 account.",
+      restricted: "KYC required.",
+      verification: {
+        level: "kyc",
+        steps: ["bet365 account.", "UK identity verification.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "bet365 6 Scores Challenge", url: "https://www.bettingodds.com/news/bet365-6-scores-challenge-predictions-premier-league-matchweek-29-2026" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "betmgm-goldengoals",
+      name: "BetMGM Golden Goals",
+      short: "Predict six Premier League scores weekly for £250,000.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.bettingodds.com/news/betmgm-golden-goals-premier-league-gw-31-march-2026",
+      rulesUrl: "https://www.bettingodds.com/news/betmgm-golden-goals-premier-league-gw-31-march-2026",
+      prizeUsd: "£250,000",
+      prizeNote: "Free to play with a BetMGM UK account. KYC applies.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK, 18+, BetMGM account.",
+      restricted: "KYC required.",
+      verification: {
+        level: "kyc",
+        steps: ["BetMGM UK account.", "Identity verification.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "BetMGM Golden Goals", url: "https://www.bettingodds.com/news/betmgm-golden-goals-premier-league-gw-31-march-2026" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "paddypower-drop",
+      name: "Paddy Power Beat The Drop",
+      short: "Answer 15 yes/no questions to hold the pot. Free version pays £5,000 daily.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.paddypower.com/",
+      rulesUrl: "https://mybettingsites.com/articles/paddy-power-beat-the-drop-how-it-works",
+      prizeUsd: "£5,000 daily (free version)",
+      prizeNote: "Free to play; a free Paddy Power account with full KYC is required.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, Paddy Power account.",
+      restricted: "Full KYC (ID + address).",
+      verification: {
+        level: "kyc",
+        steps: ["Paddy Power account.", "Full KYC.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Paddy Power Beat The Drop", url: "https://mybettingsites.com/articles/paddy-power-beat-the-drop-how-it-works" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "dirty-dozen",
+      name: "Dirty Dozen (Gambling.com)",
+      short: "Predict yellow and red cards for 12 players to win £12,000 weekly.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.gambling.com/games/dirty-dozen",
+      rulesUrl: "https://www.gambling.com/games/dirty-dozen",
+      prizeUsd: "£12,000 weekly",
+      prizeNote: "Free Gambling.com account (email only, no KYC).",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, free account.",
+      restricted: "Email signup; no KYC for most players.",
+      verification: {
+        level: "account",
+        steps: ["Free Gambling.com account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Dirty Dozen", url: "https://www.gambling.com/games/dirty-dozen" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "the-special-one",
+      name: "The Special One",
+      short: "Last-man-standing knockout game with prizes. Email signup.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://thespecialone.co.uk/",
+      rulesUrl: "https://thespecialone.co.uk/",
+      prizeUsd: "Prizes (last-man-standing)",
+      prizeNote: "Free account (email). UK-focused.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, free account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "The Special One", url: "https://thespecialone.co.uk/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "andys-predictor",
+      name: "Andy's Bet Club £1M Predictor",
+      short: "Predict the final Premier League table 1-20 for a £1,000,000 prize.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://andysbetclub.co.uk/predictor-game/",
+      rulesUrl: "https://andysbetclub.co.uk/predictor-game/",
+      prizeUsd: "£1,000,000",
+      prizeNote: "Free account (email, UK/Ireland). Perfect table required for the top prize.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "UK/Ireland, 18+, free account.",
+      restricted: "See official rules.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Andy's Bet Club Predictor", url: "https://andysbetclub.co.uk/predictor-game/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "verse-gaming",
+      name: "Verse Gaming",
+      short: "Free prediction platform with cash prizes paid in VerseCash.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.versegaming.com/",
+      rulesUrl: "https://www.versegaming.com/",
+      prizeUsd: "Cash prizes (VerseCash)",
+      prizeNote: "Free account (email). Confirm redemption terms for VerseCash.",
+      minCashout: "Confirm in-app",
+      payoutMethods: ["VerseCash / platform payout"],
+      eligibility: "18+, free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Verse Gaming", url: "https://www.versegaming.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "lockmypicks",
+      name: "LockMyPicks",
+      short: "Free pick'em platform with coins and leaderboards. Confirm cash prizes before playing.",
+      type: "sports",
+      status: "mixed",
+      freePath: "partial",
+      platforms: ["web"],
+      signupUrl: "https://lockmypicks.com/",
+      rulesUrl: "https://lockmypicks.com/",
+      prizeUsd: "Coins/leaderboards",
+      prizeNote: "Free account. Prize currency and cash conversion unverified in 2026 reviews.",
+      minCashout: "Confirm in-app",
+      payoutMethods: ["Platform currency"],
+      eligibility: "18+, free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account."]
+      },
+      sources: [
+        { title: "LockMyPicks", url: "https://lockmypicks.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "pickem-sports",
+      name: "Pick 'Em Sports (iOS)",
+      short: "Free NFL/CFB pick'em app with sponsored prizes.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["ios"],
+      signupUrl: "https://apps.apple.com/us/app/pick-em-sports-nfl-cfb/id6737177213",
+      rulesUrl: "https://apps.apple.com/us/app/pick-em-sports-nfl-cfb/id6737177213",
+      prizeUsd: "Sponsored prizes",
+      prizeNote: "Free account (email). Prizes are sponsor-funded.",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "US, 18+, free account.",
+      restricted: "See app terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Pick 'Em Sports (App Store)", url: "https://apps.apple.com/us/app/pick-em-sports-nfl-cfb/id6737177213" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "sports-predictor",
+      name: "Sports Predictor (iOS)",
+      short: "Free fantasy/sports prediction game with cash paid via PayPal.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["ios"],
+      signupUrl: "https://apps.apple.com/us/app/sports-predictor-fantasy-game/id1445043792",
+      rulesUrl: "https://apps.apple.com/us/app/sports-predictor-fantasy-game/id1445043792",
+      prizeUsd: "Cash via PayPal",
+      prizeNote: "Free account (email). Confirm current prize structure in-app.",
+      minCashout: "Confirm in-app",
+      payoutMethods: ["PayPal"],
+      eligibility: "18+, free account.",
+      restricted: "See app terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Sports Predictor (App Store)", url: "https://apps.apple.com/us/app/sports-predictor-fantasy-game/id1445043792" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "goaloracle",
+      name: "GoalOracle",
+      short: "Skill-based football prediction game with prizes for top finishers.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://goaloracle.io/",
+      rulesUrl: "https://goaloracle.io/",
+      prizeUsd: "Prizes for top finishers",
+      prizeNote: "Free to play. Confirm prize currency on the site.",
+      minCashout: "Confirm on site",
+      payoutMethods: ["Platform payout"],
+      eligibility: "18+, free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "GoalOracle", url: "https://goaloracle.io/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "oddspedia",
+      name: "Oddspedia Handicapping Contests",
+      short: "Free capper/pick contests with a cash prize pool.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://oddspedia.com/us/picks/capper-contests/wc2026-competition",
+      rulesUrl: "https://oddspedia.com/us/picks/capper-contests/wc2026-competition",
+      prizeUsd: "€2,000 prize pool",
+      prizeNote: "Free to enter. Runs around major events (e.g., World Cup).",
+      minCashout: "Winner claim only",
+      payoutMethods: ["Operator payout"],
+      eligibility: "18+, free account.",
+      restricted: "See contest terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account.", "Winner verification on claim."]
+      },
+      sources: [
+        { title: "Oddspedia capper contests", url: "https://oddspedia.com/us/picks/capper-contests/wc2026-competition" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "streak-for-cash",
+      name: "Streak for the Cash",
+      short: "Streak-based prediction game. Site live but prize structure unverified in 2026.",
+      type: "sports",
+      status: "caution",
+      freePath: "partial",
+      platforms: ["web"],
+      signupUrl: "https://www.streakforthecash.com/",
+      rulesUrl: "https://www.streakforthecash.com/",
+      prizeUsd: "Unverified",
+      prizeNote: "Included for completeness. Confirm current prizes and ownership before relying on it.",
+      minCashout: "Unknown",
+      payoutMethods: ["Unknown"],
+      eligibility: "Unknown.",
+      restricted: "Prize structure unverified.",
+      verification: {
+        level: "account",
+        steps: ["Confirm the live site before entering."]
+      },
+      sources: [
+        { title: "Streak for the Cash", url: "https://www.streakforthecash.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "gamersaloon",
+      name: "GamerSaloon 1-Rounders",
+      short: "Free single-round esports brackets (Madden, EA FC, NBA 2K) paying $10 as bonus cash.",
+      type: "skill",
+      status: "live",
+      freePath: "partial",
+      platforms: ["web"],
+      signupUrl: "https://www.gamersaloon.com/promos/1rounder/",
+      rulesUrl: "https://www.gamersaloon.com/promos/1rounder/",
+      prizeUsd: "$10 cash per bracket",
+      prizeNote: "Free entry; the $10 is paid as bonus cash usable for further entries (winnable via more play).",
+      minCashout: "Bonus cash, not direct withdrawal",
+      payoutMethods: ["Bonus cash"],
+      eligibility: "18+, free GamerSaloon account.",
+      restricted: "Bonus-cash prize, not a direct USD withdrawal.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free GamerSaloon account.", "Winner verification for withdrawals."]
+      },
+      sources: [
+        { title: "GamerSaloon 1-Rounders", url: "https://www.gamersaloon.com/promos/1rounder/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "playerslounge",
+      name: "Players' Lounge Free Tournaments",
+      short: "Free Madden and EA FC tournaments with cash prizes.",
+      type: "skill",
+      status: "live",
+      freePath: "partial",
+      platforms: ["web", "ios"],
+      signupUrl: "https://www.playerslounge.com/madden",
+      rulesUrl: "https://www.playerslounge.com/madden",
+      prizeUsd: "Cash",
+      prizeNote: "Free tournaments pay cash; confirm the specific lobby and payout before entering.",
+      minCashout: "Confirm in-app",
+      payoutMethods: ["Operator payout"],
+      eligibility: "18+, free Players' Lounge account.",
+      restricted: "See platform rules.",
+      verification: {
+        level: "eligibility",
+        steps: ["Free account.", "Winner verification for withdrawal."]
+      },
+      sources: [
+        { title: "Players' Lounge", url: "https://www.playerslounge.com/madden" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "officepoolstop",
+      name: "OfficePoolStop",
+      short: "Free platform to run pick'em, survivor, confidence, squares, and bookie pools.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://officepoolstop.com/",
+      rulesUrl: "https://officepoolstop.com/",
+      prizeUsd: "Prizes decided by your group",
+      prizeNote: "Platform is free; the prize pool is funded by your group, not the site.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account (commissioner).",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account to run a pool."]
+      },
+      sources: [
+        { title: "OfficePoolStop", url: "https://officepoolstop.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "funofficepools",
+      name: "FunOfficePools",
+      short: "Free pick'em, survivor, and squares pools for offices since 2007.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://www.funofficepools.com/",
+      rulesUrl: "https://www.funofficepools.com/",
+      prizeUsd: "Prizes decided by your group",
+      prizeNote: "Free platform. Group-funded prizes.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account to run a pool."]
+      },
+      sources: [
+        { title: "FunOfficePools", url: "https://www.funofficepools.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "mysurvivorpool",
+      name: "MySurvivorPool",
+      short: "Free survivor and football squares hosting.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://mysurvivorpool.com/",
+      rulesUrl: "https://mysurvivorpool.com/",
+      prizeUsd: "Prizes decided by your group",
+      prizeNote: "Free (preseason). Group-funded prizes.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account to run a pool."]
+      },
+      sources: [
+        { title: "MySurvivorPool", url: "https://mysurvivorpool.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "gridirongames",
+      name: "Gridiron Games",
+      short: "Survivor pools for offices. Free for players.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://gridirongames.com/football-pools/nfl-survivor/",
+      rulesUrl: "https://gridirongames.com/football-pools/nfl-survivor/",
+      prizeUsd: "Prizes decided by your group",
+      prizeNote: "Free for players. Group-funded prizes.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account."]
+      },
+      sources: [
+        { title: "Gridiron Games", url: "https://gridirongames.com/football-pools/nfl-survivor/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "squarespool",
+      name: "SquaresPool.com",
+      short: "Free Super Bowl and any-game football squares hosting.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "http://www.squarespool.com/",
+      rulesUrl: "http://www.squarespool.com/",
+      prizeUsd: "Prizes decided by your group",
+      prizeNote: "Free platform. Group-funded prizes.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "Free account.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["Free account."]
+      },
+      sources: [
+        { title: "SquaresPool", url: "http://www.squarespool.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "myfantasyleague",
+      name: "MyFantasyLeague",
+      short: "Custom fantasy league hosting. Free trial through Week 4.",
+      type: "pools",
+      status: "live",
+      freePath: "partial",
+      platforms: ["web"],
+      signupUrl: "https://home.myfantasyleague.com/",
+      rulesUrl: "https://home.myfantasyleague.com/",
+      prizeUsd: "Prizes decided by your league",
+      prizeNote: "Free trial through Week 4, then paid. League-funded prizes.",
+      minCashout: "n/a — league prize",
+      payoutMethods: ["League-determined"],
+      eligibility: "Free account.",
+      restricted: "Paid after the free trial.",
+      verification: {
+        level: "account",
+        steps: ["Free account."]
+      },
+      sources: [
+        { title: "MyFantasyLeague", url: "https://home.myfantasyleague.com/" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "trofeo",
+      name: "Trofeo.live",
+      short: "Free NFL confidence and pick'em pools. Players do not even need an account.",
+      type: "pools",
+      status: "live",
+      freePath: "full",
+      platforms: ["web"],
+      signupUrl: "https://trofeo.live/nfl-confidence-pool",
+      rulesUrl: "https://trofeo.live/nfl-confidence-pool",
+      prizeUsd: "Pools with friends",
+      prizeNote: "Free to use. Group-decided prizes.",
+      minCashout: "n/a — group prize",
+      payoutMethods: ["Group-determined"],
+      eligibility: "No account required for players.",
+      restricted: "See site terms.",
+      verification: {
+        level: "account",
+        steps: ["No account required to join a pool."]
+      },
+      sources: [
+        { title: "Trofeo.live", url: "https://trofeo.live/nfl-confidence-pool" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "dabble",
+      name: "Dabble Fantasy",
+      short: "DFS signup bonus: $10 free with code ALARM. No deposit; 1x playthrough to withdraw.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://dabble.com/",
+      rulesUrl: "https://www.fantasyalarm.com/articles/promotions/best-free-dabble-promo-code-10-bonus-no-deposit/192437",
+      prizeUsd: "$10 free credit (code ALARM)",
+      prizeNote: "No deposit. Winnings withdraw after a 1x playthrough. Promo terms can change.",
+      minCashout: "After 1x playthrough",
+      payoutMethods: ["Withdrawal after playthrough"],
+      eligibility: "18+/21+, eligible region, free account.",
+      restricted: "Promo may require new-account status and geo eligibility.",
+      verification: {
+        level: "kyc",
+        steps: ["Free Dabble account.", "Enter code ALARM.", "KYC before withdrawal."]
+      },
+      sources: [
+        { title: "Dabble", url: "https://dabble.com/" },
+        { title: "Dabble $10 no-deposit (FantasyAlarm)", url: "https://www.fantasyalarm.com/articles/promotions/best-free-dabble-promo-code-10-bonus-no-deposit/192437" }
+      ],
+      lastChecked: "2026-08-17"
+    },
+    {
+      id: "parlayplay",
+      name: "ParlayPlay",
+      short: "DFS signup: $5 free entry. No deposit required; 1x playthrough to withdraw.",
+      type: "sports",
+      status: "live",
+      freePath: "full",
+      platforms: ["web", "ios"],
+      signupUrl: "https://parlayplay.io/",
+      rulesUrl: "https://www.thelines.com/fantasy-sports/parlayplay/",
+      prizeUsd: "$5 free entry",
+      prizeNote: "No deposit. Winnings withdraw after playthrough. Promo terms can change.",
+      minCashout: "After playthrough",
+      payoutMethods: ["Withdrawal after playthrough"],
+      eligibility: "18+/21+, eligible region, free account.",
+      restricted: "Promo may require new-account status and geo eligibility.",
+      verification: {
+        level: "kyc",
+        steps: ["Free ParlayPlay account.", "KYC before withdrawal."]
+      },
+      sources: [
+        { title: "ParlayPlay", url: "https://parlayplay.io/" },
+        { title: "ParlayPlay (TheLines)", url: "https://www.thelines.com/fantasy-sports/parlayplay/" }
+      ],
+      lastChecked: "2026-08-17"
     }
   ]
 };

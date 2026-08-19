@@ -235,9 +235,9 @@ nav a[aria-current="page"] { border-bottom: 2px solid var(--copper); }
 .badge.status-live { border-color: var(--good); color: var(--good); }
 .badge.status-mixed { border-color: var(--mix); color: var(--mix); }
 .badge.status-caution { border-color: var(--warn); color: var(--warn); }
+.badge.status-ended { border-color: var(--warn); color: var(--warn); background: #f6efe2; border-style: solid; }
 .badge.status-inactive { border-color: var(--bad); color: var(--bad); }
 .badge.free-full { background: #e4efe6; border-style: solid; border-color: #cfe0d2; }
-.badge.free-amoes { background: #efe6d4; border-style: solid; border-color: #e0d2b4; }
 .badge.free-partial { background: #ece7d8; border-style: solid; border-color: #ddd5bd; }
 .badge.free-paid-cash { background: #f3e1d8; border-style: solid; border-color: #e5c9bb; }
 

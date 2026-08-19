@@ -1,3 +1,7 @@
+> **Superseded research document (2026-08-19).** Kept for provenance. The maintained list is `assets/data.js`; see `README.md`.
+
+---
+
 ---
 layout: default
 title: Free Money Apps & Promotions 2026

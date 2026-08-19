@@ -6,7 +6,6 @@
 
   const FREE_LABEL = {
     full: "Free USD path",
-    amoes: "Free + AMOE",
     partial: "Some free events",
     "paid-cash": "Cash needs entry fee"
   };
@@ -14,6 +13,7 @@
     live: "Active",
     mixed: "Mixed",
     caution: "Caution",
+    ended: "Ended / out of season",
     inactive: "Inactive / closed"
   };
   const VERIFY_LABEL = {
@@ -129,8 +129,8 @@
   function fillStats() {
     const list = data.listings;
     $("#statTotal").textContent = String(list.length);
-    $("#statFree").textContent = String(list.filter((i) => i.freePath === "full" || i.freePath === "amoes").length);
-    $("#statIos").textContent = String(list.filter((i) => (i.platforms || []).includes("ios") && i.status !== "inactive").length);
+    $("#statFree").textContent = String(list.filter((i) => i.freePath === "full").length);
+    $("#statIos").textContent = String(list.filter((i) => (i.platforms || []).includes("ios") && i.status !== "inactive" && i.status !== "ended").length);
     $("#statNew").textContent = String((data.addedThisPassC || data.addedThisPass || []).length);
   }
 

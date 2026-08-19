@@ -1,3 +1,24 @@
+> ## ⚠️ SUPERSEDED — DO NOT USE AS A SOURCE
+>
+> **Status as of 2026-08-19: this document failed verification and is retained only as a research trail.**
+>
+> Its closing "VERIFICATION & HONESTY NOTES" claimed *"No hallucinated, duplicated, deposit, or
+> mail-in entries"* and *"a working URL to an official page"* for every row. Both claims are false:
+>
+> | Row | Claim | Reality |
+> |---|---|---|
+> | 21 | Football Nation USA — "$100 every week", ranked #5 most winnable | Page has no pick'em and no prize, only referral ads |
+> | 16 | USA TODAY Pro Football Survivor — $5,000 | URL redirects to the USA TODAY homepage |
+> | 18 | NFL Pickwatch — $1,000 season | Site: "The NFL contest isn't running for the 2026 season" |
+> | 10 | The Favorites Pick'em — $120,000 | Source is titled $100K and dates from Aug 2024 |
+> | 35 | Telegraph Fantasy Football — £3,000 | Operator states a £5,000 pool |
+> | 46–64 | FPL league codes | Sourced from **2025/26** pages; codes usually change between seasons |
+> | 8, 26–30 | ESPN Pigskin, draft contests | Out of season / ended |
+>
+> The live ledger in `assets/data.js` is the maintained source. See `AUDIT_2026-08-19_PASS3.md`.
+
+---
+
 # 🏆 100 VERIFIED FREE-TO-ENTER SKILL COMPETITIONS
 ## NFL & EPL 2026 – NO DEPOSITS. NO PURCHASE. NO MAIL-IN. NO SWEEPSTAKES.
 
